@@ -1,0 +1,6 @@
+build/generated/not_namespaced_r_class_sources/
+build/generated/res/
+build/generated/source/
+build/intermediates/
+build/outputs/
+build/tmp/
