@@ -20,7 +20,16 @@
     <last-search-timestamp>1566999961791</last-search-timestamp>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba14a68d-5329-4bce-bdf8-dfb116910c31" name="Default Changelist" comment="" />
+    <list default="true" id="ba14a68d-5329-4bce-bdf8-dfb116910c31" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Chapter_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/aidl/IBookManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/aidl/IBookManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/aidl/IOnNewBookArrivedListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/aidl/IOnNewBookArrivedListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/IBinderPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/IBinderPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/ICompute.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/ICompute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/ISecurityCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/ISecurityCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter_3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter_3/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_3/app/.gitignore" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+            <state relative-caret-position="101">
+              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -94,6 +103,9 @@
       <find>screenHeight</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -112,19 +124,20 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="71" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="384" />
+    <option name="y" value="83" />
     <option name="width" value="1060" />
     <option name="height" value="697" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -308,18 +321,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="384" y="83" width="1060" height="697" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.50177306" side_tool="true" />
       <window_info id="Designer" order="1" />
       <window_info id="Build Variants" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Capture Tool" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.20988539" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.293" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Resources Explorer" order="7" sideWeight="0.49822694" />
       <window_info id="Structure" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="0" visible="true" weight="0.26110363" />
+      <window_info anchor="bottom" id="Build" order="0" visible="true" weight="0.3445826" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.3280142" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Version Control" order="3" />
@@ -513,8 +527,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        <state relative-caret-position="101">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
         </state>
       </provider>
     </entry>

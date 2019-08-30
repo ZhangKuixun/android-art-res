@@ -21,7 +21,25 @@
     <last-search-timestamp>1566730889029</last-search-timestamp>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fb4f6ec-d5d8-4696-97ad-bc116216f1ef" name="Default Changelist" comment="" />
+    <list default="true" id="4fb4f6ec-d5d8-4696-97ad-bc116216f1ef" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ic_launcher-web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/import-summary.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proguard-project.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/aidl/IBookManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/aidl/IBookManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/aidl/IOnNewBookArrivedListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/aidl/IOnNewBookArrivedListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/IBinderPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/IBinderPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/ICompute.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/ICompute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/ISecurityCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/ISecurityCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter_3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter_3/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_3/app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter_4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_4/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,18 +60,18 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="357">
+              <caret line="21" column="76" lean-forward="true" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
             </state>
           </provider>
-          <provider editor-type-id="android-manifest" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_1/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
+            <state relative-caret-position="357">
               <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -65,7 +83,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_1/SecondActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="289">
               <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -91,6 +109,9 @@
       <find>singleTask</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -101,99 +122,32 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds">
     <option name="x" value="383" />
     <option name="y" value="61" />
     <option name="width" value="1076" />
     <option name="height" value="634" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Chapter_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ryg" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ryg" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter_1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ryg" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter_1" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -294,7 +248,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="383" y="61" width="1076" height="634" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
@@ -302,25 +256,25 @@
       <window_info id="Build Variants" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Capture Tool" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24426934" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.24409449" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Structure" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Run" />
-      <window_info anchor="bottom" id="Debug" />
-      <window_info anchor="bottom" id="Build" order="0" weight="0.32839838" />
-      <window_info anchor="bottom" id="Android Profiler" order="1" />
+      <window_info anchor="bottom" id="Build" order="0" weight="0.328" />
+      <window_info anchor="bottom" id="Android Profiler" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="TODO" order="3" />
       <window_info anchor="bottom" id="Logcat" order="4" weight="0.68775237" />
       <window_info anchor="bottom" id="Version Control" order="5" />
       <window_info anchor="bottom" id="Terminal" order="6" weight="0.32974428" />
-      <window_info anchor="right" id="Preview" weight="0.3295129" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Debug" order="8" />
       <window_info anchor="right" id="Palette&#9;" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Device File Explorer" order="2" side_tool="true" weight="0.3295129" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Preview" order="5" weight="0.3295129" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -361,7 +315,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_1/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
+        <state relative-caret-position="357">
           <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -371,7 +325,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_1/SecondActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="289">
           <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -386,11 +340,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-612" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        <state relative-caret-position="357">
+          <caret line="21" column="76" lean-forward="true" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
         </state>
       </provider>
     </entry>
