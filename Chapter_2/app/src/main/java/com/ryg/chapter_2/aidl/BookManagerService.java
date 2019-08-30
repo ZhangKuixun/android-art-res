@@ -117,7 +117,7 @@ public class BookManagerService extends Service {
         super.onDestroy();
     }
 
-    //
+    //这里会调客户端的方法，如果客户端的方法需要做延时操作，这里也必须要在子线程中执行。
     private void onNewBookArrived(Book book) throws RemoteException {
         mBookList.add(book);
         final int N = mListenerList.beginBroadcast();

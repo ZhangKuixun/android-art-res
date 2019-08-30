@@ -1,13 +1,5 @@
 package com.ryg.chapter_2.socket;
 
-import java.io.*;
-import java.net.Socket;
-import java.sql.Date;
-import java.text.SimpleDateFormat;
-
-import com.ryg.chapter_2.R;
-import com.ryg.chapter_2.utils.MyUtils;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
@@ -21,6 +13,19 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.ryg.chapter_2.R;
+import com.ryg.chapter_2.utils.MyUtils;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.net.Socket;
+import java.sql.Date;
+import java.text.SimpleDateFormat;
 
 public class TCPClientActivity extends Activity implements OnClickListener {
 
@@ -40,8 +45,7 @@ public class TCPClientActivity extends Activity implements OnClickListener {
         public void handleMessage(Message msg) {
             switch (msg.what) {
             case MESSAGE_RECEIVE_NEW_MSG: {
-                mMessageTextView.setText(mMessageTextView.getText()
-                        + (String) msg.obj);
+                mMessageTextView.setText(mMessageTextView.getText() + (String) msg.obj);
                 break;
             }
             case MESSAGE_SOCKET_CONNECTED: {
@@ -122,17 +126,14 @@ public class TCPClientActivity extends Activity implements OnClickListener {
 
         try {
             // 接收服务器端的消息
-            BufferedReader br = new BufferedReader(new InputStreamReader(
-                    socket.getInputStream()));
+            BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             while (!TCPClientActivity.this.isFinishing()) {
                 String msg = br.readLine();
                 System.out.println("receive :" + msg);
                 if (msg != null) {
                     String time = formatDateTime(System.currentTimeMillis());
-                    final String showedMsg = "server " + time + ":" + msg
-                            + "\n";
-                    mHandler.obtainMessage(MESSAGE_RECEIVE_NEW_MSG, showedMsg)
-                            .sendToTarget();
+                    final String showedMsg = "server " + time + ":" + msg + "\n";
+                    mHandler.obtainMessage(MESSAGE_RECEIVE_NEW_MSG, showedMsg).sendToTarget();
                 }
             }
             System.out.println("quit...");

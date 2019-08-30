@@ -76,31 +76,29 @@ public class TestActivity extends Activity implements OnClickListener,
     @Override
     public void onClick(View v) {
         if (v == mButton1) {
-            // mButton1.setTranslationX(100);
+//             mButton1.setTranslationX(100);
 
-            // Log.d(TAG, "button1.left=" + mButton1.getLeft());
-            // Log.d(TAG, "button1.x=" + mButton1.getX());
-            // ObjectAnimator.ofFloat(mButton1, "translationX", 0, 100)
-            // .setDuration(1000).start();
-            // MarginLayoutParams params = (MarginLayoutParams) mButton1
-            // .getLayoutParams();
-            // params.width += 100;
-            // params.leftMargin += 100;
-            // mButton1.requestLayout();
-            // mButton1.setLayoutParams(params);
+//            //移动的动画
+//            Log.d(TAG, "button1.left=" + mButton1.getLeft());
+//            Log.d(TAG, "button1.x=" + mButton1.getX());
+//            ObjectAnimator.ofFloat(mButton1, "translationX", 0, 100).setDuration(1000).start();
+//            ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) mButton1.getLayoutParams();
+//            params.width += 100;
+//            params.leftMargin += 100;
+//            mButton1.requestLayout();
+//            mButton1.setLayoutParams(params);
 
-            // final int startX = 0;
-            // final int deltaX = 100;
-            // ValueAnimator animator = ValueAnimator.ofInt(0,
-            // 1).setDuration(1000);
-            // animator.addUpdateListener(new AnimatorUpdateListener() {
-            // @Override
-            // public void onAnimationUpdate(ValueAnimator animator) {
-            // float fraction = animator.getAnimatedFraction();
-            // mButton1.scrollTo(startX + (int) (deltaX * fraction), 0);
-            // }
-            // });
-            // animator.start();
+//            final int startX = 0;
+//            final int deltaX = 100;
+//            ValueAnimator animator = ValueAnimator.ofInt(0, 1).setDuration(1000);
+//            animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+//                @Override
+//                public void onAnimationUpdate(ValueAnimator animator) {
+//                    float fraction = animator.getAnimatedFraction();
+//                    mButton1.scrollTo(startX + (int) (deltaX * fraction), 0);
+//                }
+//            });
+//            animator.start();
 
             mHandler.sendEmptyMessageDelayed(MESSAGE_SCROLL_TO, DELAYED_TIME);
         }

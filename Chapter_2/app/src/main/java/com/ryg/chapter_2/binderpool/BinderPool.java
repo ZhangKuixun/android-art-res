@@ -79,7 +79,7 @@ public class BinderPool {
         public void onServiceConnected(ComponentName name, IBinder service) {
             mBinderPool = IBinderPool.Stub.asInterface(service);
             try {
-                //当service段了以后，binder dea。如果说远程service被干掉了，可以断线重连。
+                //当service断了以后，binder dea。如果说远程service被干掉了，可以断线重连。
                 mBinderPool.asBinder().linkToDeath(mBinderPoolDeathRecipient, 0);
             } catch (RemoteException e) {
                 e.printStackTrace();
@@ -99,12 +99,18 @@ public class BinderPool {
         }
     };
 
+    //为Binder连接池创建远程Service，并实现IBinderPool
     public static class BinderPoolImpl extends IBinderPool.Stub {
 
         public BinderPoolImpl() {
             super();
         }
 
+        /**
+         * @param binderCode, 当Binder连接池连接上远程服务时，会根据不同模块的标识，即binderCode返回
+         *                    不同的Binder对象，通过这个Binder对象所执行的操作全部放生在远程服务端。
+         * @return 会根据不同模块的binderCode，返回不同的Binder对象
+         */
         @Override
         public IBinder queryBinder(int binderCode) throws RemoteException {
             IBinder binder = null;

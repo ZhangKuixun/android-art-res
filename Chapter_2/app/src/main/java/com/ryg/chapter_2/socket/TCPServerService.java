@@ -1,5 +1,11 @@
 package com.ryg.chapter_2.socket;
 
+import android.app.Service;
+import android.content.Intent;
+import android.os.IBinder;
+
+import com.ryg.chapter_2.utils.MyUtils;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -9,12 +15,6 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Random;
-
-import com.ryg.chapter_2.utils.MyUtils;
-
-import android.app.Service;
-import android.content.Intent;
-import android.os.IBinder;
 
 public class TCPServerService extends Service {
 
@@ -46,10 +46,9 @@ public class TCPServerService extends Service {
 
     private class TcpServer implements Runnable {
 
-        @SuppressWarnings("resource")
         @Override
         public void run() {
-            ServerSocket serverSocket = null;
+            ServerSocket serverSocket;
             try {
                 serverSocket = new ServerSocket(8688);
             } catch (IOException e) {
@@ -71,7 +70,7 @@ public class TCPServerService extends Service {
                             } catch (IOException e) {
                                 e.printStackTrace();
                             }
-                        };
+                        }
                     }.start();
 
                 } catch (IOException e) {
@@ -83,8 +82,7 @@ public class TCPServerService extends Service {
 
     private void responseClient(Socket client) throws IOException {
         // 用于接收客户端消息
-        BufferedReader in = new BufferedReader(new InputStreamReader(
-                client.getInputStream()));
+        BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
         // 用于向客户端发送消息
         PrintWriter out = new PrintWriter(new BufferedWriter(
                 new OutputStreamWriter(client.getOutputStream())), true);
@@ -92,9 +90,8 @@ public class TCPServerService extends Service {
         while (!mIsServiceDestoryed) {
             String str = in.readLine();
             System.out.println("msg from client:" + str);
-            if (str == null) {
+            if (str == null)
                 break;
-            }
             int i = new Random().nextInt(mDefinedMessages.length);
             String msg = mDefinedMessages[i];
             out.println(msg);

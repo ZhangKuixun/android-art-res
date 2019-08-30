@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Scroller;
 
+/**
+ * 外部拦截处理
+ */
 public class HorizontalScrollViewEx extends ViewGroup {
     private static final String TAG = "HorizontalScrollViewEx";
 
@@ -37,7 +40,7 @@ public class HorizontalScrollViewEx extends ViewGroup {
     }
 
     public HorizontalScrollViewEx(Context context, AttributeSet attrs,
-            int defStyle) {
+                                  int defStyle) {
         super(context, attrs, defStyle);
         init();
     }
@@ -54,30 +57,27 @@ public class HorizontalScrollViewEx extends ViewGroup {
         int y = (int) event.getY();
 
         switch (event.getAction()) {
-        case MotionEvent.ACTION_DOWN: {
-            intercepted = false;
-            if (!mScroller.isFinished()) {
-                mScroller.abortAnimation();
-                intercepted = true;
-            }
-            break;
-        }
-        case MotionEvent.ACTION_MOVE: {
-            int deltaX = x - mLastXIntercept;
-            int deltaY = y - mLastYIntercept;
-            if (Math.abs(deltaX) > Math.abs(deltaY)) {
-                intercepted = true;
-            } else {
+            case MotionEvent.ACTION_DOWN: {
                 intercepted = false;
+                if (!mScroller.isFinished()) {
+                    mScroller.abortAnimation();//增加滑动体验
+                    intercepted = true;
+                }
+                break;
             }
-            break;
-        }
-        case MotionEvent.ACTION_UP: {
-            intercepted = false;
-            break;
-        }
-        default:
-            break;
+            case MotionEvent.ACTION_MOVE: {
+                //滑动过程中，水平距离差比数值距离差大，父容器就拦截当前点击事件
+                int deltaX = x - mLastXIntercept;
+                int deltaY = y - mLastYIntercept;
+                intercepted = Math.abs(deltaX) > Math.abs(deltaY);
+                break;
+            }
+            case MotionEvent.ACTION_UP: {
+                intercepted = false;
+                break;
+            }
+            default:
+                break;
         }
 
         Log.d(TAG, "intercepted=" + intercepted);
@@ -89,42 +89,55 @@ public class HorizontalScrollViewEx extends ViewGroup {
         return intercepted;
     }
 
+    /**
+     * 如果此时用户在水平滑动，但是水平滑动停止之前，如果用户再迅速进行竖直滑动，就会导致界面
+     * 在水平方向无法滑动到终点，从而水平滑动处于中间状态。为了避免这种不好的体验，当水平方向
+     * 正在滑动时，下一个序列的点击事件任然交给父容器处理。下面是和滑动冲突相关的代码。
+     */
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         mVelocityTracker.addMovement(event);
         int x = (int) event.getX();
         int y = (int) event.getY();
         switch (event.getAction()) {
-        case MotionEvent.ACTION_DOWN: {
-            if (!mScroller.isFinished()) {
-                mScroller.abortAnimation();
+            case MotionEvent.ACTION_DOWN: {
+                if (!mScroller.isFinished()) {
+                    mScroller.abortAnimation();
+                }
+                break;
             }
-            break;
-        }
-        case MotionEvent.ACTION_MOVE: {
-            int deltaX = x - mLastX;
-            int deltaY = y - mLastY;
-            scrollBy(-deltaX, 0);
-            break;
-        }
-        case MotionEvent.ACTION_UP: {
-            int scrollX = getScrollX();
-            int scrollToChildIndex = scrollX / mChildWidth;
-            mVelocityTracker.computeCurrentVelocity(1000);
-            float xVelocity = mVelocityTracker.getXVelocity();
-            if (Math.abs(xVelocity) >= 50) {
-                mChildIndex = xVelocity > 0 ? mChildIndex - 1 : mChildIndex + 1;
-            } else {
-                mChildIndex = (scrollX + mChildWidth / 2) / mChildWidth;
+            case MotionEvent.ACTION_MOVE: {
+                int deltaX = x - mLastX;
+                int deltaY = y - mLastY;
+                scrollBy(-deltaX, 0);
+                break;
             }
-            mChildIndex = Math.max(0, Math.min(mChildIndex, mChildrenSize - 1));
-            int dx = mChildIndex * mChildWidth - scrollX;
-            smoothScrollBy(dx, 0);
-            mVelocityTracker.clear();
-            break;
-        }
-        default:
-            break;
+            case MotionEvent.ACTION_UP: {
+                int scrollX = getScrollX();
+                int scrollToChildIndex = scrollX / mChildWidth;
+                mVelocityTracker.computeCurrentVelocity(1000);
+                float xVelocity = mVelocityTracker.getXVelocity();
+                Log.d(TAG, "xVelocity=" + xVelocity);
+                if (Math.abs(xVelocity) >= 50) {
+                    mChildIndex = xVelocity > 0 ? mChildIndex - 1 : mChildIndex + 1;
+                } else {
+                    mChildIndex = (scrollX + mChildWidth / 2) / mChildWidth;
+                }
+                Log.d(TAG, "mChildIndex=" + mChildIndex);
+                //处理当前页面是第一个和最后一个时。
+                mChildIndex = Math.max(0, Math.min(mChildIndex, mChildrenSize - 1));
+
+                Log.d(TAG, "mChildIndex=" + mChildIndex + " scrollX=" + scrollX);
+                int dx = mChildIndex * mChildWidth - scrollX;
+
+                Log.d(TAG, "dx=" + dx);
+                smoothScrollBy(dx, 0);
+
+                mVelocityTracker.clear();
+                break;
+            }
+            default:
+                break;
         }
 
         mLastX = x;
@@ -144,6 +157,8 @@ public class HorizontalScrollViewEx extends ViewGroup {
         int widthSpecMode = MeasureSpec.getMode(widthMeasureSpec);
         int heightSpaceSize = MeasureSpec.getSize(heightMeasureSpec);
         int heightSpecMode = MeasureSpec.getMode(heightMeasureSpec);
+        Log.d(TAG, "widthSpaceSize=" + widthSpaceSize + " widthSpecMode=" + widthSpecMode);
+        Log.d(TAG, "heightSpaceSize=" + heightSpaceSize + " heightSpecMode=" + heightSpecMode);
         if (childCount == 0) {
             setMeasuredDimension(0, 0);
         } else if (heightSpecMode == MeasureSpec.AT_MOST) {
@@ -153,6 +168,7 @@ public class HorizontalScrollViewEx extends ViewGroup {
         } else if (widthSpecMode == MeasureSpec.AT_MOST) {
             final View childView = getChildAt(0);
             measuredWidth = childView.getMeasuredWidth() * childCount;
+            Log.d(TAG, "measuredWidth=" + measuredWidth);
             setMeasuredDimension(measuredWidth, heightSpaceSize);
         } else {
             final View childView = getChildAt(0);
@@ -164,6 +180,7 @@ public class HorizontalScrollViewEx extends ViewGroup {
 
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
+        Log.d(TAG, "onLayout");
         int childLeft = 0;
         final int childCount = getChildCount();
         mChildrenSize = childCount;
@@ -173,13 +190,18 @@ public class HorizontalScrollViewEx extends ViewGroup {
             if (childView.getVisibility() != View.GONE) {
                 final int childWidth = childView.getMeasuredWidth();
                 mChildWidth = childWidth;
-                childView.layout(childLeft, 0, childLeft + childWidth,
-                        childView.getMeasuredHeight());
+                childView.layout(childLeft, 0, childLeft + childWidth, childView.getMeasuredHeight());
                 childLeft += childWidth;
             }
         }
     }
 
+    /**
+     * 在startScroll方法中并没有做滑动操作，startScroll运行结束后，调用invalidate方法，invalidate方法会
+     * 导致View的重绘，在View的draw方法中调用computeScroll方法，computeScroll又会去向Scroller获取当前的
+     * scrollX和scrollY；然后通过 scrollTo 方法实现滑动，接着又调用 postInvalidate 方法进行第二次重绘，
+     * 一直循环，直到 computeScrollOffset() 方法返回值为false才结束整个滑动过程。
+     */
     private void smoothScrollBy(int dx, int dy) {
         mScroller.startScroll(getScrollX(), 0, dx, 0, 500);
         invalidate();

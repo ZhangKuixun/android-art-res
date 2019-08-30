@@ -44,9 +44,7 @@ public class BinderPoolActivity extends Activity {
         }
 
         Log.d(TAG, "visit ICompute");
-        IBinder computeBinder = binderPool
-                .queryBinder(BinderPool.BINDER_COMPUTE);
-        ;
+        IBinder computeBinder = binderPool.queryBinder(BinderPool.BINDER_COMPUTE);
         mCompute = ComputeImpl.asInterface(computeBinder);
         try {
             System.out.println("3+5=" + mCompute.add(3, 5));

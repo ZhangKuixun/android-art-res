@@ -1,0 +1,4 @@
+#Fri Aug 30 20:15:18 CST 2019
+base.0=F\:\\android\\ren_yu_gang\\android-art-res\\Chapter_5\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+path.0=classes.dex
+renamed.0=classes.dex

@@ -6,6 +6,9 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.ListView;
 
+/**
+ * 内部拦截处理
+ */
 public class ListViewEx extends ListView {
     private static final String TAG = "ListViewEx";
 
@@ -27,10 +30,10 @@ public class ListViewEx extends ListView {
         super(context, attrs, defStyle);
     }
 
-    public void setHorizontalScrollViewEx2(
-            HorizontalScrollViewEx2 horizontalScrollViewEx2) {
+    public void setHorizontalScrollViewEx2(HorizontalScrollViewEx2 horizontalScrollViewEx2) {
         mHorizontalScrollViewEx2 = horizontalScrollViewEx2;
     }
+
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent event) {
@@ -38,24 +41,24 @@ public class ListViewEx extends ListView {
         int y = (int) event.getY();
 
         switch (event.getAction()) {
-        case MotionEvent.ACTION_DOWN: {
-            mHorizontalScrollViewEx2.requestDisallowInterceptTouchEvent(true);
-            break;
-        }
-        case MotionEvent.ACTION_MOVE: {
-            int deltaX = x - mLastX;
-            int deltaY = y - mLastY;
-            Log.d(TAG, "dx:" + deltaX + " dy:" + deltaY);
-            if (Math.abs(deltaX) > Math.abs(deltaY)) {
-                mHorizontalScrollViewEx2.requestDisallowInterceptTouchEvent(false);
+            case MotionEvent.ACTION_DOWN: {
+                mHorizontalScrollViewEx2.requestDisallowInterceptTouchEvent(true);
+                break;
             }
-            break;
-        }
-        case MotionEvent.ACTION_UP: {
-            break;
-        }
-        default:
-            break;
+            case MotionEvent.ACTION_MOVE: {
+                int deltaX = x - mLastX;
+                int deltaY = y - mLastY;
+                Log.d(TAG, "dx:" + deltaX + " dy:" + deltaY);
+                if (Math.abs(deltaX) > Math.abs(deltaY)) {
+                    mHorizontalScrollViewEx2.requestDisallowInterceptTouchEvent(false);
+                }
+                break;
+            }
+            case MotionEvent.ACTION_UP: {
+                break;
+            }
+            default:
+                break;
         }
 
         mLastX = x;

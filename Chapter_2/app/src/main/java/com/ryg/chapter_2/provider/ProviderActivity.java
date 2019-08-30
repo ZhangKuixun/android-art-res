@@ -1,15 +1,15 @@
 package com.ryg.chapter_2.provider;
 
-import com.ryg.chapter_2.R;
-import com.ryg.chapter_2.aidl.Book;
-import com.ryg.chapter_2.model.User;
-
 import android.app.Activity;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+
+import com.ryg.chapter_2.R;
+import com.ryg.chapter_2.aidl.Book;
+import com.ryg.chapter_2.model.User;
 
 public class ProviderActivity extends Activity {
     private static final String TAG = "ProviderActivity";
@@ -18,7 +18,7 @@ public class ProviderActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_provider);
-        // Uri uri = Uri.parse("content://com.ryg.chapter_2.book.provider");
+        // Uri uri = Uri.parse("content://com.ryg.chapter_2.book.provider");// android:authorities 指定的值
         // getContentResolver().query(uri, null, null, null, null);
         // getContentResolver().query(uri, null, null, null, null);
         // getContentResolver().query(uri, null, null, null, null);

@@ -44,6 +44,7 @@ public class TestButton extends TextView {
         int y = (int) event.getRawY();
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN: {
+                Log.d(TAG, "ACTION_DOWN");
                 break;
             }
             case MotionEvent.ACTION_MOVE: {

@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Scroller;
 
+/**
+ * 内部拦截处理
+ */
 public class HorizontalScrollViewEx2 extends ViewGroup {
     private static final String TAG = "HorizontalScrollViewEx2";
 
@@ -89,17 +92,23 @@ public class HorizontalScrollViewEx2 extends ViewGroup {
             int scrollX = getScrollX();
             int scrollToChildIndex = scrollX / mChildWidth;
             Log.d(TAG, "current index:" + scrollToChildIndex);
+
             mVelocityTracker.computeCurrentVelocity(1000);
+
             float xVelocity = mVelocityTracker.getXVelocity();
             if (Math.abs(xVelocity) >= 50) {
                 mChildIndex = xVelocity > 0 ? mChildIndex - 1 : mChildIndex + 1;
             } else {
                 mChildIndex = (scrollX + mChildWidth / 2) / mChildWidth;
             }
+
+            //处理当前页面是第一个和最后一个时。
             mChildIndex = Math.max(0, Math.min(mChildIndex, mChildrenSize - 1));
             int dx = mChildIndex * mChildWidth - scrollX;
             smoothScrollBy(dx, 0);
+
             mVelocityTracker.clear();
+
             Log.d(TAG, "index:" + scrollToChildIndex + " dx:" + dx);
             break;
         }

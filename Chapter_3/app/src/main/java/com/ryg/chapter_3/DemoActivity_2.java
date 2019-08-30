@@ -1,12 +1,5 @@
 package com.ryg.chapter_3;
 
-import java.util.ArrayList;
-
-import com.ryg.chapter_3.R;
-import com.ryg.chapter_3.ui.HorizontalScrollViewEx2;
-import com.ryg.chapter_3.ui.ListViewEx;
-import com.ryg.chapter_3.utils.MyUtils;
-
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -15,11 +8,17 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.ryg.chapter_3.ui.HorizontalScrollViewEx2;
+import com.ryg.chapter_3.ui.ListViewEx;
+import com.ryg.chapter_3.utils.MyUtils;
+
+import java.util.ArrayList;
 
 public class DemoActivity_2 extends Activity {
     private static final String TAG = "DemoActivity_2";
