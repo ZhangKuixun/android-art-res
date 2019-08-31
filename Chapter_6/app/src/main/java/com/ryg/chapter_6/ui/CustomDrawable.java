@@ -7,6 +7,9 @@ import android.graphics.PixelFormat;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 
+/**
+ * 自定义Drawable
+ */
 public class CustomDrawable extends Drawable {
     private Paint mPaint;
 
