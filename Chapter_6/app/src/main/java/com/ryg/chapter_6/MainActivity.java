@@ -1,11 +1,6 @@
 package com.ryg.chapter_6;
 
-import com.ryg.chapter_6.R;
-import com.ryg.chapter_6.ui.CustomDrawable;
-
 import android.app.Activity;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.ClipDrawable;
 import android.graphics.drawable.Drawable;
@@ -16,6 +11,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.ryg.chapter_6.ui.CustomDrawable;
 
 public class MainActivity extends Activity {
     private static final String TAG = "MainActivity";
