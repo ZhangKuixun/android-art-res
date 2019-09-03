@@ -1,12 +1,5 @@
 package com.ryg.chapter_12;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.ryg.chapter_12.R;
-import com.ryg.chapter_12.loader.ImageLoader;
-import com.ryg.chapter_12.utils.MyUtils;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -23,10 +16,20 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 
+import com.ryg.chapter_12.loader.ImageLoader;
+import com.ryg.chapter_12.utils.MyUtils;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * 12.3 ImageLoader的使用
+ */
 public class MainActivity extends Activity implements OnScrollListener {
     private static final String TAG = "MainActivity";
 
-    private List<String> mUrList = new ArrayList<String>();
+    private List<String> mUrList = new ArrayList<>();
     ImageLoader mImageLoader;
     private GridView mImageGridView;
     private BaseAdapter mImageAdapter;
@@ -84,11 +87,9 @@ public class MainActivity extends Activity implements OnScrollListener {
                 "http://img02.tooopen.com/images/20140320/sy_57121781945.jpg",
                 "http://www.renyugang.cn/emlog/content/plugins/kl_album/upload/201004/852706aad6df6cd839f1211c358f2812201004120651068641.jpg"
         };
-        for (String url : imageUrls) {
-            mUrList.add(url);
-        }
+        mUrList.addAll(Arrays.asList(imageUrls));
         int screenWidth = MyUtils.getScreenMetrics(this).widthPixels;
-        int space = (int)MyUtils.dp2px(this, 20f);
+        int space = (int) MyUtils.dp2px(this, 20f);
         mImageWidth = (screenWidth - space) / 3;
         mIsWifi = MyUtils.isWifi(this);
         if (mIsWifi) {
@@ -97,7 +98,7 @@ public class MainActivity extends Activity implements OnScrollListener {
     }
 
     private void initView() {
-        mImageGridView = (GridView) findViewById(R.id.gridView1);
+        mImageGridView = findViewById(R.id.gridView1);
         mImageAdapter = new ImageAdapter(this);
         mImageGridView.setAdapter(mImageAdapter);
         mImageGridView.setOnScrollListener(this);
@@ -144,17 +145,17 @@ public class MainActivity extends Activity implements OnScrollListener {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            ViewHolder holder = null;
+            ViewHolder holder;
             if (convertView == null) {
-                convertView = mInflater.inflate(R.layout.image_list_item,parent, false);
+                convertView = mInflater.inflate(R.layout.image_list_item, parent, false);
                 holder = new ViewHolder();
-                holder.imageView = (ImageView) convertView.findViewById(R.id.image);
+                holder.imageView = convertView.findViewById(R.id.image);
                 convertView.setTag(holder);
             } else {
                 holder = (ViewHolder) convertView.getTag();
             }
             ImageView imageView = holder.imageView;
-            final String tag = (String)imageView.getTag();
+            final String tag = (String) imageView.getTag();
             final String uri = getItem(position);
             if (!uri.equals(tag)) {
                 imageView.setImageDrawable(mDefaultBitmapDrawable);
@@ -169,9 +170,22 @@ public class MainActivity extends Activity implements OnScrollListener {
     }
 
     private static class ViewHolder {
-        public ImageView imageView;
+        ImageView imageView;
     }
 
+    /**
+     * 12.3.2 优化列表的卡顿现象
+     * <p>
+     * 1. 不能在getView中做耗时操作。不要在getView中直接加载图片。
+     * <p>
+     * 2. 控制异步任务的执行频率：如果用户刻意频繁上下滑动，getView 方法会不停调用，从而产生大量的异步任务。
+     * 可以考虑在列表滑动停止加载图片，给 ListView 或者 GridView 设置 setOnScrollListener 并在
+     * OnScrollListener 的 onScrollStateChanged 方法中判断列表是否处于滑动状态，如果是的话就停止加载图片，
+     * 然后在getView 方法中，当列表静止时才能加载图片。
+     * <p>
+     * 3. 大部分情况下，可以使用硬件加速解决莫名卡顿问题，通过设置 android:hardwareAccelerated="true"
+     * 即可为 Activity 开启硬件加速。
+     */
     @Override
     public void onScrollStateChanged(AbsListView view, int scrollState) {
         if (scrollState == OnScrollListener.SCROLL_STATE_IDLE) {
@@ -184,8 +198,8 @@ public class MainActivity extends Activity implements OnScrollListener {
 
     @Override
     public void onScroll(AbsListView view, int firstVisibleItem,
-            int visibleItemCount, int totalItemCount) {
+                         int visibleItemCount, int totalItemCount) {
         // ignored
-        
+
     }
 }
