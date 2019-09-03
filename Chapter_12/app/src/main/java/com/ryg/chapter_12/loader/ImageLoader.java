@@ -70,20 +70,24 @@ public class ImageLoader {
             KEEP_ALIVE, TimeUnit.SECONDS,
             new LinkedBlockingQueue<Runnable>(), sThreadFactory);
 
+    /**
+     * ImageLoader 用主线程的Looper来构造Handler对象，使得ImageLoader可以在主线程中构造。
+     */
     private Handler mMainHandler = new Handler(Looper.getMainLooper()) {
         @Override
         public void handleMessage(Message msg) {
             LoaderResult result = (LoaderResult) msg.obj;
             ImageView imageView = result.imageView;
             String uri = (String) imageView.getTag(TAG_KEY_URI);
+
+            //为了解决由于View复用导致的列表错位，给ImageView设置图片之前检查它的url有没有变化。
+
             if (uri.equals(result.uri)) {
                 imageView.setImageBitmap(result.bitmap);
             } else {
                 Log.w(TAG, "set image bitmap,but url has changed, ignored!");
             }
         }
-
-        ;
     };
 
     private Context mContext;
