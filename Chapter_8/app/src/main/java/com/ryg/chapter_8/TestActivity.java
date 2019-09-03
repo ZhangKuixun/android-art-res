@@ -1,7 +1,7 @@
 package com.ryg.chapter_8;
 
-import com.ryg.chapter_8.R;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.PixelFormat;
@@ -32,14 +32,16 @@ public class TestActivity extends Activity implements OnTouchListener {
     }
 
     private void initView() {
-        mCreateWindowButton = (Button) findViewById(R.id.button1);
+        mCreateWindowButton = findViewById(R.id.button1);
         mWindowManager = (WindowManager) getSystemService(Context.WINDOW_SERVICE);
     }
 
+    @SuppressLint({"RtlHardcoded", "SetTextI18n"})
     public void onButtonClick(View v) {
         if (v == mCreateWindowButton) {
             mFloatingButton = new Button(this);
             mFloatingButton.setText("click me");
+
             mLayoutParams = new WindowManager.LayoutParams(
                     LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT, 0, 0,
                     PixelFormat.TRANSPARENT);
@@ -60,22 +62,22 @@ public class TestActivity extends Activity implements OnTouchListener {
         int rawX = (int) event.getRawX();
         int rawY = (int) event.getRawY();
         switch (event.getAction()) {
-        case MotionEvent.ACTION_DOWN: {
-            break;
-        }
-        case MotionEvent.ACTION_MOVE: {
-            int x = (int) event.getX();
-            int y = (int) event.getY();
-            mLayoutParams.x = rawX;
-            mLayoutParams.y = rawY;
-            mWindowManager.updateViewLayout(mFloatingButton, mLayoutParams);
-            break;
-        }
-        case MotionEvent.ACTION_UP: {
-            break;
-        }
-        default:
-            break;
+            case MotionEvent.ACTION_DOWN: {
+                break;
+            }
+            case MotionEvent.ACTION_MOVE: {
+                int x = (int) event.getX();
+                int y = (int) event.getY();
+                mLayoutParams.x = rawX;
+                mLayoutParams.y = rawY;
+                mWindowManager.updateViewLayout(mFloatingButton, mLayoutParams);
+                break;
+            }
+            case MotionEvent.ACTION_UP: {
+                break;
+            }
+            default:
+                break;
         }
 
         return false;

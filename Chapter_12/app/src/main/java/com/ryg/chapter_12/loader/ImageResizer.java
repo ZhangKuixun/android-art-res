@@ -1,11 +1,15 @@
 package com.ryg.chapter_12.loader;
 
-import java.io.FileDescriptor;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Log;
 
+import java.io.FileDescriptor;
+
+/**
+ * 1. 图片压缩功能
+ */
 public class ImageResizer {
     private static final String TAG = "ImageResizer";
 
@@ -13,7 +17,7 @@ public class ImageResizer {
     }
 
     public Bitmap decodeSampledBitmapFromResource(Resources res,
-            int resId, int reqWidth, int reqHeight) {
+                                                  int resId, int reqWidth, int reqHeight) {
         // First decode with inJustDecodeBounds=true to check dimensions
         final BitmapFactory.Options options = new BitmapFactory.Options();
         options.inJustDecodeBounds = true;
@@ -21,7 +25,7 @@ public class ImageResizer {
 
         // Calculate inSampleSize
         options.inSampleSize = calculateInSampleSize(options, reqWidth,
-                reqHeight);
+                                                     reqHeight);
 
         // Decode bitmap with inSampleSize set
         options.inJustDecodeBounds = false;
@@ -35,8 +39,7 @@ public class ImageResizer {
         BitmapFactory.decodeFileDescriptor(fd, null, options);
 
         // Calculate inSampleSize
-        options.inSampleSize = calculateInSampleSize(options, reqWidth,
-                reqHeight);
+        options.inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);
 
         // Decode bitmap with inSampleSize set
         options.inJustDecodeBounds = false;
@@ -44,7 +47,7 @@ public class ImageResizer {
     }
 
     public int calculateInSampleSize(BitmapFactory.Options options,
-            int reqWidth, int reqHeight) {
+                                     int reqWidth, int reqHeight) {
         if (reqWidth == 0 || reqHeight == 0) {
             return 1;
         }

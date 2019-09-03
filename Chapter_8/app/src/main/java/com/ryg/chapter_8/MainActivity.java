@@ -1,7 +1,5 @@
 package com.ryg.chapter_8;
 
-import com.ryg.chapter_8.R;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
