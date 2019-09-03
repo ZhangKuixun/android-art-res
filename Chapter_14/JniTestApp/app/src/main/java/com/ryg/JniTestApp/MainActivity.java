@@ -1,14 +1,14 @@
 package com.ryg.JniTestApp;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
 
@@ -20,8 +20,9 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TextView textView = (TextView)findViewById(R.id.msg);
-        textView.setText(get());
+        TextView textView = findViewById(R.id.msg);
+        String text = get();
+        textView.setText(text);
         set("hello world from JniTestApp");
     }
 
