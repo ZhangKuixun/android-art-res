@@ -1,11 +1,11 @@
 package com.ryg.chapter_2.model;
 
-import java.io.Serializable;
+import android.os.Parcel;
+import android.os.Parcelable;
 
 import com.ryg.chapter_2.aidl.Book;
 
-import android.os.Parcel;
-import android.os.Parcelable;
+import java.io.Serializable;
 
 public class User implements Parcelable, Serializable {
     private static final long serialVersionUID = 519067123721295773L;
@@ -50,8 +50,7 @@ public class User implements Parcelable, Serializable {
         userId = in.readInt();
         userName = in.readString();
         isMale = in.readInt() == 1;
-        book = in
-                .readParcelable(Thread.currentThread().getContextClassLoader());
+        book = in.readParcelable(Thread.currentThread().getContextClassLoader());
     }
 
     @Override

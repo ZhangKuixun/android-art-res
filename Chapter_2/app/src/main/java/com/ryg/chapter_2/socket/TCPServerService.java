@@ -19,7 +19,7 @@ import java.util.Random;
 public class TCPServerService extends Service {
 
     private boolean mIsServiceDestoryed = false;
-    private String[] mDefinedMessages = new String[] {
+    private String[] mDefinedMessages = new String[]{
             "你好啊，哈哈",
             "请问你叫什么名字呀？",
             "今天北京天气不错啊，shy",

@@ -41,7 +41,7 @@ public class SecondActivity extends Activity {
         super.onResume();
         User user = (User) getIntent().getSerializableExtra("extra_user");
         Log.d(TAG, "user:" + user.toString());
-        // Log.d(TAG, "UserManage.sUserId=" + UserManager.sUserId);
+//         Log.d(TAG, "UserManage.sUserId=" + UserManager.sUserId);
         recoverFromFile();
     }
 

@@ -39,21 +39,21 @@ public class TCPClientActivity extends Activity implements OnClickListener {
     private PrintWriter mPrintWriter;
     private Socket mClientSocket;
 
-    @SuppressLint("HandlerLeak")
+    @SuppressLint({"HandlerLeak", "SetTextI18n"})
     private Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             switch (msg.what) {
-            case MESSAGE_RECEIVE_NEW_MSG: {
-                mMessageTextView.setText(mMessageTextView.getText() + (String) msg.obj);
-                break;
-            }
-            case MESSAGE_SOCKET_CONNECTED: {
-                mSendButton.setEnabled(true);
-                break;
-            }
-            default:
-                break;
+                case MESSAGE_RECEIVE_NEW_MSG: {
+                    mMessageTextView.setText(mMessageTextView.getText() + (String) msg.obj);
+                    break;
+                }
+                case MESSAGE_SOCKET_CONNECTED: {
+                    mSendButton.setEnabled(true);
+                    break;
+                }
+                default:
+                    break;
             }
         }
     };
@@ -62,12 +62,14 @@ public class TCPClientActivity extends Activity implements OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tcpclient);
-        mMessageTextView = (TextView) findViewById(R.id.msg_container);
-        mSendButton = (Button) findViewById(R.id.send);
+        mMessageTextView = findViewById(R.id.msg_container);
+        mSendButton = findViewById(R.id.send);
         mSendButton.setOnClickListener(this);
-        mMessageEditText = (EditText) findViewById(R.id.msg);
+        mMessageEditText = findViewById(R.id.msg);
+
         Intent service = new Intent(this, TCPServerService.class);
         startService(service);
+
         new Thread() {
             @Override
             public void run() {
@@ -89,6 +91,7 @@ public class TCPClientActivity extends Activity implements OnClickListener {
         super.onDestroy();
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onClick(View v) {
         if (v == mSendButton) {

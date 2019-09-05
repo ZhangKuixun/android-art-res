@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/AppTheme.Button.Green"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/AppTheme.Button.Highlight"
+        android:text="Button" />
+</merge>

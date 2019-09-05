@@ -3,8 +3,6 @@ package com.ryg.chapter_2.aidl;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.ComponentName;
-import android.content.Context;
-import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.Handler;
@@ -21,7 +19,7 @@ import java.util.List;
 
 public class BookManagerActivity extends Activity {
 
-    private static final String TAG = "BookManagerActivity";
+    private static final String TAG = "Kevin-BMA";
     private static final int MESSAGE_NEW_BOOK_ARRIVED = 1;
 
     private IBookManager mRemoteBookManager;
@@ -58,8 +56,16 @@ public class BookManagerActivity extends Activity {
     };
 
     private ServiceConnection mConnection = new ServiceConnection() {//主线程中执行
+
+        /**
+         * 服务绑定成功
+         * @param service 如果是同进程，这里返回的是RemoteService的匿名内部类Stub。
+         *                如果是不同的进程，这里返回的是Binderproxy。不同的进程创建的对象不一样。
+         */
         public void onServiceConnected(ComponentName className, IBinder service) {
             IBookManager bookManager = IBookManager.Stub.asInterface(service);
+            Log.i(TAG, "bookManager:" + bookManager);
+
             mRemoteBookManager = bookManager;
             try {
                 //死亡代理
@@ -104,8 +110,8 @@ public class BookManagerActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_manager);
-        Intent intent = new Intent(this, BookManagerService.class);
-        bindService(intent, mConnection, Context.BIND_AUTO_CREATE);
+//        Intent intent = new Intent(this, BookManagerService.class);
+//        bindService(intent, mConnection, Context.BIND_AUTO_CREATE);
     }
 
     public void onButton1Click(View view) {

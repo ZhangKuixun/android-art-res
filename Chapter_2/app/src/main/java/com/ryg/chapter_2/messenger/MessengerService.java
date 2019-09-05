@@ -20,33 +20,35 @@ public class MessengerService extends Service {
         @Override
         public void handleMessage(Message msg) {
             switch (msg.what) {
-            case MyConstants.MSG_FROM_CLIENT:
-                Log.i(TAG, "receive msg from Client:" + msg.getData().getString("msg"));
+                case MyConstants.MSG_FROM_CLIENT:
+                    Log.i(TAG, "receive msg from Client:" + msg.getData().getString("msg"));
 
-                Messenger client = msg.replyTo;
-                Message relpyMessage = Message.obtain(null, MyConstants.MSG_FROM_SERVICE);
-                Bundle bundle = new Bundle();
+                    Messenger client = msg.replyTo;
+                    Message relpyMessage = Message.obtain(null, MyConstants.MSG_FROM_SERVICE);
+                    Bundle bundle = new Bundle();
 
-                bundle.putString("reply", "嗯，你的消息我已经收到，稍后会回复你。");
+                    bundle.putString("reply", "嗯，你的消息我已经收到，稍后会回复你。");
 
-                relpyMessage.setData(bundle);
-                try {
-                    client.send(relpyMessage);
-                } catch (RemoteException e) {
-                    e.printStackTrace();
-                }
-                break;
-            default:
-                super.handleMessage(msg);
+                    relpyMessage.setData(bundle);
+                    try {
+                        client.send(relpyMessage);
+                    } catch (RemoteException e) {
+                        e.printStackTrace();
+                    }
+                    break;
+                default:
+                    super.handleMessage(msg);
             }
         }
     }
 
+    // 创建一个Service来处理客户端请求，同时创建一个Handler并通过它来创建一个Messenger，
+    // 然后在Service#onBind中返回Messenger对象Binder即可。
     private final Messenger mMessenger = new Messenger(new MessengerHandler());
 
     @Override
     public IBinder onBind(Intent intent) {
-        return mMessenger.getBinder();//验证权限的方法 同样适用于Messenger中 。
+        return mMessenger.getBinder();//验证权限的方法 同样适用于Messenger中。
     }
 
     @Override

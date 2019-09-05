@@ -17,9 +17,9 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public class BookManagerService extends Service {
 
-    private static final String TAG = "BMS";
+    private static final String TAG = "Kevin-BMS";
 
-    private AtomicBoolean mIsServiceDestoryed = new AtomicBoolean(false);
+    private AtomicBoolean mIsServiceDestroyed = new AtomicBoolean(false);
 
     /**
      * AIDL方法是在服务端的Binder线程池中执行的，因此当多个客户端同时连接时，管理数
@@ -95,6 +95,7 @@ public class BookManagerService extends Service {
 
     @Override
     public void onCreate() {
+        Log.e(TAG, "onCreate");
         super.onCreate();
         mBookList.add(new Book(1, "Android"));
         mBookList.add(new Book(2, "Ios"));
@@ -113,7 +114,7 @@ public class BookManagerService extends Service {
 
     @Override
     public void onDestroy() {
-        mIsServiceDestoryed.set(true);
+        mIsServiceDestroyed.set(true);
         super.onDestroy();
     }
 
@@ -138,7 +139,7 @@ public class BookManagerService extends Service {
         @Override
         public void run() {
             // do background processing here.....
-            while (!mIsServiceDestoryed.get()) {
+            while (!mIsServiceDestroyed.get()) {
                 try {
                     Thread.sleep(5000);
                 } catch (InterruptedException e) {

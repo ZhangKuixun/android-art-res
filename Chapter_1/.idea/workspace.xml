@@ -22,23 +22,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fb4f6ec-d5d8-4696-97ad-bc116216f1ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter_15/app/src/main/res/layout/merge.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ic_launcher-web.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/import-summary.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/proguard-project.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chapter_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/aidl/IBookManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/aidl/IBookManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/aidl/IOnNewBookArrivedListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/aidl/IOnNewBookArrivedListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/IBinderPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/IBinderPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/ICompute.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/ICompute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/ISecurityCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_2/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/ISecurityCenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chapter_3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chapter_3/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_3/app/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chapter_4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter_15/app/src/main/java/com/ryg/chapter_15/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_15/app/src/main/java/com/ryg/chapter_15/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter_15/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_15/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,8 +49,11 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider editor-type-id="android-manifest" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="76" lean-forward="true" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
+            <state relative-caret-position="50">
+              <caret line="33" column="44" lean-forward="true" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+              <folding>
+                <element signature="e#1338#1356#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_1/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+            <state relative-caret-position="289">
+              <caret line="29" column="56" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_1/SecondActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
+            <state relative-caret-position="59">
+              <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,13 +91,27 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_1/ui/RevealLayout.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="105" column="36" selection-start-line="105" selection-start-column="36" selection-end-line="105" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>loaded</find>
       <find>singleTask</find>
+      <find>new Thread</find>
+      <find>com.ryg.category.c</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -123,32 +127,17 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="383" />
-    <option name="y" value="61" />
+    <option name="x" value="284" />
+    <option name="y" value="55" />
     <option name="width" value="1076" />
     <option name="height" value="634" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Chapter_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="device.picker.selection" value="6a523f0e" />
@@ -248,7 +237,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="383" y="61" width="1076" height="634" extended-state="0" />
+    <frame x="284" y="55" width="1076" height="634" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
@@ -269,6 +258,7 @@
       <window_info anchor="bottom" id="Terminal" order="6" weight="0.32974428" />
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="Debug" order="8" />
+      <window_info anchor="bottom" id="Find" order="9" />
       <window_info anchor="right" id="Palette&#9;" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Device File Explorer" order="2" side_tool="true" weight="0.3295129" />
@@ -278,9 +268,7 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/import-summary.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/import-summary.txt" />
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -298,45 +286,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_1/ui/RevealLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_third.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_1/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_1/SecondActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_1/ThirdActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -350,11 +304,48 @@
         <state relative-caret-position="-255" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_1/ThirdActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_1/ui/RevealLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="105" column="36" selection-start-line="105" selection-start-column="36" selection-end-line="105" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_1/SecondActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_1/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="29" column="56" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="76" lean-forward="true" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
+        <state relative-caret-position="50">
+          <caret line="33" column="44" lean-forward="true" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+          <folding>
+            <element signature="e#1338#1356#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

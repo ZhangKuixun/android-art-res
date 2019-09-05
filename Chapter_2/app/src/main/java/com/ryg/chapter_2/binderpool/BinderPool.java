@@ -126,7 +126,6 @@ public class BinderPool {
                 default:
                     break;
             }
-
             return binder;
         }
     }
