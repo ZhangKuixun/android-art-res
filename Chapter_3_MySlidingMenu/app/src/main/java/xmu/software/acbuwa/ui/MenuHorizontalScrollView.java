@@ -3,7 +3,6 @@ package xmu.software.acbuwa.ui;
 import android.content.Context;
 import android.os.Handler;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +10,7 @@ import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import android.widget.Button;
 import android.widget.HorizontalScrollView;
 import android.widget.ListView;
+
 import xmu.software.acbuwa.R;
 import xmu.software.acbuwa.callback.SizeCallBack;
 
@@ -64,7 +64,7 @@ public class MenuHorizontalScrollView extends HorizontalScrollView {
     }
 
     public MenuHorizontalScrollView(Context context, AttributeSet attrs,
-            int defStyle) {
+                                    int defStyle) {
         super(context, attrs, defStyle);
         // TODO Auto-generated constructor stub
         init();
@@ -79,7 +79,7 @@ public class MenuHorizontalScrollView extends HorizontalScrollView {
     }
 
     public void initViews(View[] children, SizeCallBack sizeCallBack,
-            ListView menu) {
+                          ListView menu) {
         this.menu = menu;
         ViewGroup parent = (ViewGroup) getChildAt(0);
 
@@ -96,7 +96,7 @@ public class MenuHorizontalScrollView extends HorizontalScrollView {
 
     /**
      * 设置按钮
-     * 
+     *
      * @param btn
      */
     public void setMenuBtn(Button btn) {
@@ -124,7 +124,7 @@ public class MenuHorizontalScrollView extends HorizontalScrollView {
             menuOut = false;
         }
         me.smoothScrollTo(this.menuWidth, 0);
-        if (menuOut == true)
+        if (menuOut)
             this.menuBtn.setBackgroundResource(R.drawable.menu_fold);
         else
             this.menuBtn.setBackgroundResource(R.drawable.menu_unfold);
@@ -152,6 +152,7 @@ public class MenuHorizontalScrollView extends HorizontalScrollView {
                 break;
             }
             case MotionEvent.ACTION_MOVE: {
+                //外部拦截法，判断是否需要拦截滑动事件。
                 final int deltaX = x - mLastXIntercept;
                 final int deltaY = y - mLastYIntercept;
                 if (Math.abs(deltaX) > Math.abs(deltaY)) {
@@ -179,16 +180,22 @@ public class MenuHorizontalScrollView extends HorizontalScrollView {
     public boolean onTouchEvent(MotionEvent event) {
         int x = (int) event.getX();
         int y = (int) event.getY();
+        // 当菜单滑出来以后，菜单但不能被点击，事件不能穿透 HorizontalScrollView。
+        // current 表示 HorizontalScrollView 在X轴滑动的坐标。点击的范围小于 scrollToViewPos。
         if ((this.current == 0 && x < this.scrollToViewPos)) {
             return false;
         }
 
         if (event.getAction() == MotionEvent.ACTION_MOVE) {
+            // 当我们拦截了 ACTION_MOVE 之后，HorizontalScrollView 划不动了。因为 HorizontalScrollView
+            // 内部重写了 onInterceptTouchEvent 和 onTouchEvent,就导致 HorizontalScrollView 的一些特性发生了改变。
+            // 解决：ACTION_MOVE 中自己去 scrollBy
             scrollBy(mLastX - x, 0);
             mLastX = x;
             mLastY = y;
             return true;
         } else if (event.getAction() == MotionEvent.ACTION_UP) {
+            //划出一段距离之后突然松手后，页面该朝哪边滑动
             menuSlide();
             return true;
         }
@@ -199,6 +206,7 @@ public class MenuHorizontalScrollView extends HorizontalScrollView {
     /*-												   -*/
     /*-			Class 			Area				   -*/
     /*-												   -*/
+
     /****************************************************/
 
     public class MenuOnGlobalLayoutListener implements OnGlobalLayoutListener {
@@ -209,7 +217,7 @@ public class MenuHorizontalScrollView extends HorizontalScrollView {
         private SizeCallBack sizeCallBack;
 
         public MenuOnGlobalLayoutListener(ViewGroup parent, View[] children,
-                SizeCallBack sizeCallBack) {
+                                          SizeCallBack sizeCallBack) {
 
             this.parent = parent;
             this.children = children;
