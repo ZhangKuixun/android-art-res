@@ -27,17 +27,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1daff391-d20c-439d-9faa-7f7113882779" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../AidlClientCallChapter_2/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chapter_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Chapter_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chapter_2/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_2/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_viewpager_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_viewpager_28_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_3/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -161,10 +152,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,7 +280,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.499002" visible="true" weight="0.3540724" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Resources Explorer" order="7" weight="0.32954547" />
-      <window_info anchor="bottom" id="Build" order="0" weight="0.27480915" />
+      <window_info anchor="bottom" id="Build" order="0" visible="true" weight="0.27480915" />
       <window_info anchor="bottom" id="Run" order="1" />
       <window_info anchor="bottom" id="Android Profiler" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" weight="0.32839838" />
@@ -569,12 +560,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://D:/android/sdk/sources/android-28/android/os/Build.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -698,7 +689,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_3/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>

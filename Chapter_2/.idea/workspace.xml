@@ -12,10 +12,7 @@
     <last-search-timestamp>1566627373669</last-search-timestamp>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd3c94d4-b1c9-46a3-8f69-b34c300d2be8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="dd3c94d4-b1c9-46a3-8f69-b34c300d2be8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,61 +43,25 @@
         <entry file="file://$PROJECT_DIR$/../.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="191">
-              <caret line="52" column="41" lean-forward="true" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+              <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/aidl/IBookManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="136" column="27" selection-start-line="136" selection-start-column="27" selection-end-line="136" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/aidl/IOnNewBookArrivedListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/IBinderPool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/ICompute.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/ISecurityCenter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="52" column="67" selection-start-line="52" selection-start-column="67" selection-end-line="52" selection-end-column="67" />
+            <state relative-caret-position="170">
+              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -179,12 +140,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/socket/TCPClientActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/../.gitignore" />
-        <option value="$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/aidl/IBookManager.java" />
         <option value="$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/aidl/IOnNewBookArrivedListener.java" />
         <option value="$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/IBinderPool.java" />
         <option value="$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/ICompute.java" />
         <option value="$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/ISecurityCenter.java" />
         <option value="$PROJECT_DIR$/app/.gitignore" />
+        <option value="$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/aidl/IBookManager.java" />
       </list>
     </option>
   </component>
@@ -325,31 +286,7 @@
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="build" type="462c0819:PsiDirectoryNode" />
               <item name="generated" type="462c0819:PsiDirectoryNode" />
-              <item name="aidl_source_output_dir" type="462c0819:PsiDirectoryNode" />
-              <item name="debug" type="462c0819:PsiDirectoryNode" />
-              <item name="compileDebugAidl" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ryg" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter_2" type="462c0819:PsiDirectoryNode" />
-              <item name="binderpool" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="generated" type="462c0819:PsiDirectoryNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="generated" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="apt" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -790,13 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/aidl/IBookManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="136" column="27" selection-start-line="136" selection-start-column="27" selection-end-line="136" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/aidl/IOnNewBookArrivedListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -807,14 +737,21 @@
     <entry file="file://$PROJECT_DIR$/../.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
-          <caret line="52" column="41" lean-forward="true" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/aidl/IBookManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
         </state>
       </provider>
     </entry>
