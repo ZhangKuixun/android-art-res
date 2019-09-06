@@ -22,7 +22,7 @@ public class HorizontalScrollViewEx extends ViewGroup {
     // 分别记录上次滑动的坐标
     private int mLastX = 0;
     private int mLastY = 0;
-    // 分别记录上次滑动的坐标(onInterceptTouchEvent)
+    // 分别记录上次拦截时的坐标(onInterceptTouchEvent)
     private int mLastXIntercept = 0;
     private int mLastYIntercept = 0;
 
@@ -67,8 +67,8 @@ public class HorizontalScrollViewEx extends ViewGroup {
             }
             case MotionEvent.ACTION_MOVE: {
                 //滑动过程中，水平距离差比数值距离差大，父容器就拦截当前点击事件
-                int deltaX = x - mLastXIntercept;
-                int deltaY = y - mLastYIntercept;
+                final int deltaX = x - mLastXIntercept;
+                final int deltaY = y - mLastYIntercept;
                 intercepted = Math.abs(deltaX) > Math.abs(deltaY);
                 break;
             }
@@ -124,7 +124,7 @@ public class HorizontalScrollViewEx extends ViewGroup {
                     mChildIndex = (scrollX + mChildWidth / 2) / mChildWidth;
                 }
                 Log.d(TAG, "mChildIndex=" + mChildIndex);
-                //处理当前页面是第一个和最后一个时。
+                //处理当前页面的位置在容器中第一个或者最后一个。
                 mChildIndex = Math.max(0, Math.min(mChildIndex, mChildrenSize - 1));
 
                 Log.d(TAG, "mChildIndex=" + mChildIndex + " scrollX=" + scrollX);

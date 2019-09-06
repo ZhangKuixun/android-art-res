@@ -27,8 +27,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1daff391-d20c-439d-9faa-7f7113882779" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Chapter_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter_3_MySlidingMenu/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_3/ui/HorizontalScrollViewEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_3/ui/HorizontalScrollViewEx.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,11 +62,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_3/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="221">
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_3/ui/HorizontalScrollViewEx.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/android/sdk/sources/android-28/android/widget/Scroller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6222">
+              <caret line="385" column="23" selection-start-line="385" selection-start-column="23" selection-end-line="385" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -81,17 +100,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mChildIndex &gt;50</find>
-      <find>scrollX</find>
-      <find>widthSpaceSize</find>
-      <find>onMeasure</find>
-      <find>heightMeasureSpec</find>
-      <find>HeightMeasureSpec</find>
-      <find>2147483648</find>
-      <find>heightSpecMode</find>
-      <find>intercepted</find>
-      <find>xVelocity</find>
-      <find>mChildWidth</find>
       <find>createList</find>
       <find>mChildIndex=</find>
       <find>scrollX=</find>
@@ -111,7 +119,21 @@
       <find>callback</find>
       <find>setcallback</find>
       <find>setCallback</find>
+      <find>GestureDetector</find>
+      <find>VelocityTracker</find>
+      <find>效果就是慢慢滑动</find>
+      <find>startScroll(scrollX,0,delta,0,1000);</find>
+      <find>smoothScrollTo</find>
+      <find>mCurrY</find>
+      <find>startscroll</find>
+      <find>oninter</find>
+      <find>mLastX</find>
+      <find>mLastXIntercept</find>
+      <find>mLastYIntercept</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -130,19 +152,19 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_3/ThirdActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_3/DemoActivity_1.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_3/ui/ListViewEx.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_3/ui/HorizontalScrollViewEx.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_3/ui/StickyLayout.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_3/ui/HorizontalScrollViewEx2.java" />
         <option value="$PROJECT_DIR$/app/.gitignore" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_3/TestActivity.java" />
         <option value="D:/android/sdk/sources/android-28/android/view/ViewRootImpl.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_3/ui/HorizontalScrollViewEx.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="127" />
-    <option name="y" value="80" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="309" />
+    <option name="y" value="81" />
     <option name="width" value="944" />
     <option name="height" value="658" />
   </component>
@@ -152,10 +174,20 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Chapter_3" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -164,7 +196,7 @@
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="device.picker.selection" value="JNV8DISGQSO7BIRS" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Chapter_4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Chapter_3_MySlidingMenu" />
     <property name="project.structure.last.edited" value="Variables" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -270,8 +302,36 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="127" y="80" width="944" height="658" extended-state="0" />
+    <frame x="309" y="81" width="944" height="658" extended-state="1" />
+    <editor active="true" />
     <layout>
+      <window_info id="Captures" order="0" sideWeight="0.500998" side_tool="true" weight="0.26923078" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Build Variants" order="2" side_tool="true" weight="0.32918552" />
+      <window_info id="Favorites" order="3" show_stripe_button="false" side_tool="true" weight="0.32918552" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.499002" visible="true" weight="0.3540724" />
+      <window_info id="Image Layers" order="6" />
+      <window_info id="Resources Explorer" order="7" weight="0.32954547" />
+      <window_info anchor="bottom" id="Build" order="0" visible="true" weight="0.3874046" />
+      <window_info anchor="bottom" id="Run" order="1" />
+      <window_info anchor="bottom" id="Android Profiler" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" weight="0.32839838" />
+      <window_info anchor="bottom" id="TODO" order="4" weight="0.3296875" />
+      <window_info anchor="bottom" id="Version Control" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32839838" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.3296875" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3296875" />
+      <window_info anchor="bottom" id="Logcat" order="9" weight="0.41857335" />
+      <window_info anchor="right" id="Palette&#9;" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Device File Explorer" order="2" side_tool="true" weight="0.3295129" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.3295129" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Preview" order="5" weight="0.3280543" />
+      <window_info anchor="right" id="Structure" order="6" weight="0.32918552" />
+    </layout>
+    <layout-to-restore>
       <window_info id="Captures" order="0" sideWeight="0.500998" side_tool="true" weight="0.26923078" />
       <window_info id="Designer" order="1" />
       <window_info id="Build Variants" order="2" side_tool="true" weight="0.32918552" />
@@ -296,33 +356,6 @@
       <window_info anchor="right" id="Gradle" order="3" weight="0.3295129" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Preview" order="5" weight="0.3280543" />
-      <window_info anchor="right" id="Structure" order="6" weight="0.32918552" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Captures" order="0" sideWeight="0.500998" side_tool="true" weight="0.26923078" />
-      <window_info id="Designer" order="1" />
-      <window_info id="Build Variants" order="2" side_tool="true" weight="0.32918552" />
-      <window_info id="Favorites" order="3" show_stripe_button="false" side_tool="true" weight="0.32918552" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.499002" visible="true" weight="0.3540724" />
-      <window_info id="Image Layers" order="6" />
-      <window_info id="Resources Explorer" order="7" weight="0.32954547" />
-      <window_info anchor="bottom" id="Build" order="0" weight="0.27631578" />
-      <window_info anchor="bottom" id="Run" order="1" />
-      <window_info anchor="bottom" id="Android Profiler" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" weight="0.32839838" />
-      <window_info anchor="bottom" id="TODO" order="4" weight="0.3296875" />
-      <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32839838" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.3296875" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3296875" />
-      <window_info anchor="bottom" id="Logcat" order="9" weight="0.41857335" />
-      <window_info anchor="right" id="Palette&#9;" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Device File Explorer" order="2" side_tool="true" weight="0.3295129" />
-      <window_info anchor="right" id="Gradle" order="3" weight="0.3295129" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info active="true" anchor="right" id="Preview" order="5" visible="true" weight="0.3280543" />
       <window_info anchor="right" id="Structure" order="6" weight="0.32918552" />
     </layout-to-restore>
   </component>
@@ -417,13 +450,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="134" column="16" selection-start-line="134" selection-start-column="16" selection-end-line="134" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/android/sdk/sources/android-28/android/widget/Scroller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="207" column="25" selection-start-line="207" selection-start-column="25" selection-end-line="207" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -537,21 +563,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_3/ui/HorizontalScrollViewEx.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_3/ui/HorizontalScrollViewEx2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
@@ -571,13 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="595" column="42" selection-start-line="595" selection-start-column="32" selection-end-line="595" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -688,8 +693,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_3/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="221">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/android/sdk/sources/android-28/android/widget/Scroller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6222">
+          <caret line="385" column="23" selection-start-line="385" selection-start-column="23" selection-end-line="385" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_3/ui/HorizontalScrollViewEx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
         </state>
       </provider>
     </entry>
