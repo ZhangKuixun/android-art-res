@@ -5,3 +5,5 @@ build/intermediates/
 build/outputs/
 build/tmp/
 
+gradlew
+                                                                                                                                                                                                                                                            build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/
