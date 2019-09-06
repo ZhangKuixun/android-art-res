@@ -13,25 +13,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd3c94d4-b1c9-46a3-8f69-b34c300d2be8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Chapter_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chapter_15/app/src/main/java/com/ryg/chapter_15/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_15/app/src/main/java/com/ryg/chapter_15/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chapter_15/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_15/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AidlClientCallChapter_2/gradle.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/aidl/IBookManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/aidl/IOnNewBookArrivedListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/IBinderPool.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/ICompute.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/ISecurityCenter.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/SecondActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/SecondActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/aidl/BookManagerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/aidl/BookManagerActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/aidl/BookManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/aidl/BookManagerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/binderpool/BinderPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/binderpool/BinderPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/messenger/MessengerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/messenger/MessengerActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/messenger/MessengerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/messenger/MessengerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/socket/TCPClientActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/socket/TCPClientActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/socket/TCPServerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/socket/TCPServerService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,37 +46,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="134" selection-start-line="134" selection-end-line="134" />
-              <folding>
-                <element signature="e#2964#2982#0" expanded="true" />
-                <element signature="e#3406#3424#0" expanded="true" />
-                <element signature="e#3601#3619#0" expanded="true" />
-                <element signature="e#3775#3812#0" expanded="true" />
-                <element signature="e#4166#4200#0" expanded="true" />
-                <element signature="e#5084#5117#0" expanded="true" />
-                <element signature="e#5772#5806#0" expanded="true" />
-                <element signature="e#6326#6362#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="309">
+              <caret line="73" column="2" selection-start-line="73" selection-start-column="2" selection-end-line="73" selection-end-column="2" />
             </state>
           </provider>
           <provider editor-type-id="android-manifest" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/socket/TCPClientActivity.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/binderpool/BinderPoolActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="134" column="43" selection-start-line="134" selection-start-column="36" selection-end-line="134" selection-end-column="43" />
+            <state relative-caret-position="174">
+              <caret line="40" column="69" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/socket/TCPServerService.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/binderpool/BinderPool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="947">
-              <caret line="86" column="23" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="23" />
+            <state relative-caret-position="250">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
             </state>
           </provider>
         </entry>
@@ -101,7 +75,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>LAUNCHER</find>
       <find>intent-filter&gt;</find>
       <find>MessengerService.launch</find>
       <find>MessengerService</find>
@@ -131,6 +104,7 @@
       <find>MESSAGE_RECEIVE_NEW_MSG</find>
       <find>connect server success</find>
       <find>Serv</find>
+      <find>System.out</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -172,15 +146,15 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/binderpool/BinderPool.java" />
         <option value="$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/IBinderPool.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/backup_descriptor.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/socket/TCPServerService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/socket/TCPClientActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="243" />
-    <option name="y" value="108" />
+    <option name="x" value="71" />
+    <option name="y" value="53" />
     <option name="width" value="1039" />
     <option name="height" value="708" />
   </component>
@@ -192,6 +166,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -200,175 +175,10 @@
               <item name="Chapter_2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Chapter_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
-            <path>
-              <item name="Chapter_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="generated" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="generated" type="462c0819:PsiDirectoryNode" />
-              <item name="aidl_source_output_dir" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="generated" type="462c0819:PsiDirectoryNode" />
-              <item name="aidl_source_output_dir" type="462c0819:PsiDirectoryNode" />
-              <item name="debug" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="generated" type="462c0819:PsiDirectoryNode" />
-              <item name="aidl_source_output_dir" type="462c0819:PsiDirectoryNode" />
-              <item name="debug" type="462c0819:PsiDirectoryNode" />
-              <item name="compileDebugAidl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="generated" type="462c0819:PsiDirectoryNode" />
-              <item name="aidl_source_output_dir" type="462c0819:PsiDirectoryNode" />
-              <item name="debug" type="462c0819:PsiDirectoryNode" />
-              <item name="compileDebugAidl" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="generated" type="462c0819:PsiDirectoryNode" />
-              <item name="aidl_source_output_dir" type="462c0819:PsiDirectoryNode" />
-              <item name="debug" type="462c0819:PsiDirectoryNode" />
-              <item name="compileDebugAidl" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter_2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="generated" type="462c0819:PsiDirectoryNode" />
-              <item name="aidl_source_output_dir" type="462c0819:PsiDirectoryNode" />
-              <item name="debug" type="462c0819:PsiDirectoryNode" />
-              <item name="compileDebugAidl" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter_2" type="462c0819:PsiDirectoryNode" />
-              <item name="binderpool" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter_2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter_2" type="462c0819:PsiDirectoryNode" />
-              <item name="aidl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter_2" type="462c0819:PsiDirectoryNode" />
-              <item name="binderpool" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter_2" type="462c0819:PsiDirectoryNode" />
-              <item name="socket" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter_2" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chapter_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chapter_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="gradle" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -378,7 +188,7 @@
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="device.picker.selection" value="JNV8DISGQSO7BIRS" />
-    <property name="last_opened_file_path" value="D:/android/android-8.0.0_r1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AidlClientCallChapter_2" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -472,14 +282,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="243" y="108" width="1039" height="708" extended-state="0" />
-    <editor active="true" />
+    <frame x="71" y="53" width="1039" height="708" extended-state="0" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.50176054" side_tool="true" weight="0.32962137" />
       <window_info id="Designer" order="1" />
       <window_info id="Favorites" order="2" sideWeight="0.50176054" side_tool="true" weight="0.32962137" />
       <window_info id="Capture Tool" order="3" />
-      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.3564862" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.3564862" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Resources Explorer" order="6" sideWeight="0.49823943" weight="0.32962137" />
       <window_info id="Build Variants" order="7" side_tool="true" />
@@ -492,7 +301,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.329806" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32974428" />
-      <window_info anchor="bottom" id="Logcat" order="9" weight="0.5768194" />
+      <window_info anchor="bottom" id="Logcat" order="9" weight="0.57665503" />
       <window_info anchor="right" id="Palette&#9;" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
@@ -501,6 +310,33 @@
       <window_info anchor="right" id="Preview" order="5" weight="0.32962137" />
       <window_info anchor="right" id="Structure" order="6" sideWeight="0.50176054" weight="0.32890704" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Captures" order="0" sideWeight="0.50176054" side_tool="true" weight="0.32962137" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Favorites" order="2" sideWeight="0.50176054" side_tool="true" weight="0.32962137" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.3564862" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Resources Explorer" order="6" sideWeight="0.49823943" weight="0.32962137" />
+      <window_info id="Build Variants" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.32974428" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
+      <window_info anchor="bottom" id="Android Profiler" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32752612" />
+      <window_info anchor="bottom" id="Build" order="4" weight="0.4216028" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.3292683" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.329806" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32974428" />
+      <window_info anchor="bottom" id="Logcat" order="9" weight="0.57665503" />
+      <window_info anchor="right" id="Palette&#9;" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Device File Explorer" order="4" side_tool="true" weight="0.32938388" />
+      <window_info anchor="right" id="Preview" order="5" weight="0.32962137" />
+      <window_info anchor="right" id="Structure" order="6" sideWeight="0.50176054" weight="0.32890704" />
+    </layout-to-restore>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -676,13 +512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/binderpool/BinderPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/IBinderPool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -704,13 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/binderpool/BinderPoolActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/ryg/chapter_2/binderpool/ISecurityCenter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -718,9 +540,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/backup_descriptor.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/backup_descriptor.xml" />
     <entry file="file://D:/android/sdk/sources/android-28/android/content/ContextWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -735,24 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="134" selection-start-line="134" selection-end-line="134" />
-          <folding>
-            <element signature="e#2964#2982#0" expanded="true" />
-            <element signature="e#3406#3424#0" expanded="true" />
-            <element signature="e#3601#3619#0" expanded="true" />
-            <element signature="e#3775#3812#0" expanded="true" />
-            <element signature="e#4166#4200#0" expanded="true" />
-            <element signature="e#5084#5117#0" expanded="true" />
-            <element signature="e#5772#5806#0" expanded="true" />
-            <element signature="e#6326#6362#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/android/sdk/sources/android-28/java/net/ServerSocket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -762,15 +564,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/socket/TCPClientActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
+        <state relative-caret-position="1853">
           <caret line="134" column="43" selection-start-line="134" selection-start-column="36" selection-end-line="134" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/socket/TCPServerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="947">
-          <caret line="86" column="23" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="23" />
+        <state relative-caret-position="-144">
+          <caret line="72" column="25" lean-forward="true" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/binderpool/BinderPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="73" column="2" selection-start-line="73" selection-start-column="2" selection-end-line="73" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ryg/chapter_2/binderpool/BinderPoolActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="40" column="69" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
         </state>
       </provider>
     </entry>

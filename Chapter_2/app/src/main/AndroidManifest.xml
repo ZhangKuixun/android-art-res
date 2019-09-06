@@ -111,8 +111,8 @@
             android:name=".provider.ProviderActivity"
             android:label="@string/title_activity_provider">
             <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         </activity>
 
@@ -130,11 +130,11 @@
             android:name=".socket.TCPClientActivity"
             android:label="@string/title_activity_tcpclient"
             android:windowSoftInputMode="adjustResize">
-            <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
 
-            <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
 
         <service
@@ -144,11 +144,11 @@
         <activity
             android:name=".binderpool.BinderPoolActivity"
             android:label="@string/title_activity_binder_pool">
-            <!--<intent-filter>-->
-            <!--<action android:name="android.intent.action.MAIN" />-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
