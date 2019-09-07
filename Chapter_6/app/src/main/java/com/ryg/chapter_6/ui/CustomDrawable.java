@@ -20,11 +20,13 @@ public class CustomDrawable extends Drawable {
 
     @Override
     public void draw(Canvas canvas) {
-        final Rect r = getBounds();
+        final Rect r = getBounds();//取出Bounds，这个Drawable到底被拉伸多大
         float cx = r.exactCenterX();
         float cy = r.exactCenterY();
         canvas.drawCircle(cx, cy, Math.min(cx, cy), mPaint);
     }
+
+    //下面这些方法是参考 ShapeDrawable、BitMapDrawable
 
     @Override
     public void setAlpha(int alpha) {
