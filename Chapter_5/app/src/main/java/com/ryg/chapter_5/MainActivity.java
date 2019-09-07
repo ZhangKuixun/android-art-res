@@ -5,6 +5,8 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.PackageManager;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -32,6 +34,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+        updateUI(mRemoteViewsContent);
     }
 
     private void initView() {
@@ -51,22 +54,24 @@ public class MainActivity extends Activity {
         View view = getLayoutInflater().inflate(layoutId, mRemoteViewsContent, false);
         remoteViews.reapply(this, view);
         mRemoteViewsContent.addView(view);
+    }
 
-        //加载另外一个应用的布局到自己的应用。视频中介绍的简单方法。
-//        final String pkg = "com.ryg.reveallayout";
-//        Resources resources = null;
-//        try {
-//            resources = getPackageManager().getResourcesForApplication(pkg);
-//        } catch (PackageManager.NameNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//
-//        if (resources != null) {
-//            int layoutId1 = resources.getIdentifier("layout_test", "layout", pkg);
-//            RemoteViews remoteViews1 = new RemoteViews(pkg, layoutId1);
-//            View view1 = remoteViews1.apply(this, mRemoteViewsContent);
-//            mRemoteViewsContent.addView(view1);
-//        }
+    //加载另外一个应用的布局到自己的应用。视频中介绍的简单方法。
+    private void updateUI(LinearLayout mRemoteViewsContent) {
+        final String pkg = "com.ryg.chapter_1";
+        Resources resources = null;
+        try {
+            resources = getPackageManager().getResourcesForApplication(pkg);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        if (resources != null) {
+            int layoutId = resources.getIdentifier("activity_main", "layout", pkg);
+            RemoteViews remoteViews = new RemoteViews(pkg, layoutId);
+            View view1 = remoteViews.apply(this, mRemoteViewsContent);
+            mRemoteViewsContent.addView(view1);
+        }
     }
 
     @Override
