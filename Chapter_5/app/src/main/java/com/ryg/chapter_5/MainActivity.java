@@ -51,6 +51,22 @@ public class MainActivity extends Activity {
         View view = getLayoutInflater().inflate(layoutId, mRemoteViewsContent, false);
         remoteViews.reapply(this, view);
         mRemoteViewsContent.addView(view);
+
+        //加载另外一个应用的布局到自己的应用。视频中介绍的简单方法。
+//        final String pkg = "com.ryg.reveallayout";
+//        Resources resources = null;
+//        try {
+//            resources = getPackageManager().getResourcesForApplication(pkg);
+//        } catch (PackageManager.NameNotFoundException e) {
+//            e.printStackTrace();
+//        }
+//
+//        if (resources != null) {
+//            int layoutId1 = resources.getIdentifier("layout_test", "layout", pkg);
+//            RemoteViews remoteViews1 = new RemoteViews(pkg, layoutId1);
+//            View view1 = remoteViews1.apply(this, mRemoteViewsContent);
+//            mRemoteViewsContent.addView(view1);
+//        }
     }
 
     @Override
