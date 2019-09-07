@@ -1,6 +1,5 @@
 package com.ryg.chapter_4.ui;
 
-import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Canvas;
@@ -21,9 +20,11 @@ import java.util.ArrayList;
  * 为了性能，尽量不要在内部放入复杂的元素
  * note: long click listener is not supported current for fix compatible bug.
  */
-public class RevealLayout extends LinearLayout implements Runnable {
+public class RevealLayout extends LinearLayout
+//        implements Runnable
+{
 
-    private static final String TAG = "DxRevealLayout";
+    private static final String TAG = "RevealLayout";
     private static final boolean DEBUG = true;
 
     private Paint mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -111,7 +112,7 @@ public class RevealLayout extends LinearLayout implements Runnable {
         }
         this.getLocationOnScreen(mLocationInScreen);
         int[] location = new int[2];
-        mTouchTarget.getLocationOnScreen(location);// 3.找到点击的这个元素，它在屏幕中的位置
+        mTouchTarget.getLocationOnScreen(location);// 3.找到点击的这个元素，它在屏幕中的位置  getLocationOnScreen：一个控件在其整个屏幕上的坐标位置
         Log.e(TAG, "location[0]=" + location[0] + " location[1]=" + location[1] + " mLocationInScreen[0]=" + mLocationInScreen[0] + " mLocationInScreen[1]=" + mLocationInScreen[1]);
         int left = location[0] - mLocationInScreen[0];// 4.得出相对于layout的相对位置
         int top = location[1] - mLocationInScreen[1];
@@ -156,7 +157,7 @@ public class RevealLayout extends LinearLayout implements Runnable {
             mIsPressed = false;
             postInvalidateDelayed(INVALIDATE_DURATION);
             mDispatchUpTouchEventRunnable.event = event;
-            postDelayed(mDispatchUpTouchEventRunnable, 200);
+            postDelayed(mDispatchUpTouchEventRunnable, 200);//时间不够长，动画播放不完。
             return true;
         } else if (action == MotionEvent.ACTION_CANCEL) {
             mIsPressed = false;
@@ -188,28 +189,30 @@ public class RevealLayout extends LinearLayout implements Runnable {
         int top = location[1];
         int right = left + view.getMeasuredWidth();
         int bottom = top + view.getMeasuredHeight();
-        if (view.isClickable() && y >= top &&
-                y <= bottom && x >= left && x <= right) {//判断点击的点在不在一个矩形里面。
+        if (view.isClickable() && y >= top && y <= bottom
+                && x >= left && x <= right) {//判断点击的点在不在一个矩形里面。
             return true;
         }
         return false;
     }
 
     /**
-     * 最后，怎么延迟？ 如果我们点击了这个按钮，就立刻执行跳转，那么我们的水波纹效果就绘制不完。
+     * 10.最后，怎么延迟？ 如果我们点击了这个按钮，就立刻执行跳转，那么我们的水波纹效果就绘制不完。
      */
     //我们监听你是否点击了一个 button，如果点击了，那么我们就把这个点击的行为 postDelayed。
-    @SuppressLint("ClickableViewAccessibility")
-    @Override
-    public boolean performClick() {
-        postDelayed(this, 400);//400毫秒以后，再去触发一个 Runnable，在 Runnable 中做真正的点击操作。
-        return true;
-    }
 
-    @Override
-    public void run() {
-        super.performClick();
-    }
+
+//    @SuppressLint("ClickableViewAccessibility")
+//    @Override
+//    public boolean performClick() {
+//        postDelayed(this, 4000);//400毫秒以后，再去触发一个 Runnable，在 Runnable 中做真正的点击操作。
+//        return true;
+//    }
+//
+//    @Override
+//    public void run() {
+//        super.performClick();
+//    }
 
     private class DispatchUpTouchEventRunnable implements Runnable {
         MotionEvent event;
