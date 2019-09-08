@@ -20,6 +20,9 @@ import com.ryg.chapter_3.utils.MyUtils;
 
 import java.util.ArrayList;
 
+/**
+ * 滑动冲突场景1-内部拦截
+ */
 public class DemoActivity_2 extends Activity {
     private static final String TAG = "DemoActivity_2";
 

@@ -47,8 +47,6 @@ public class TestActivity extends Activity implements OnClickListener,
                     break;
             }
         }
-
-        ;
     };
 
     @Override
@@ -79,7 +77,7 @@ public class TestActivity extends Activity implements OnClickListener,
         if (v == mButton1) {
 //             mButton1.setTranslationX(100);
 
-//            //移动的动画
+//            //移动的动画  改变布局参数
 //            Log.d(TAG, "button1.left=" + mButton1.getLeft());
 //            Log.d(TAG, "button1.x=" + mButton1.getX());
 //            ObjectAnimator.ofFloat(mButton1, "translationX", 0, 100).setDuration(1000).start();
