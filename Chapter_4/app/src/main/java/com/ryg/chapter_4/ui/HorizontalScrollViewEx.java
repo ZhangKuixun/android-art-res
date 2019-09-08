@@ -134,6 +134,7 @@ public class HorizontalScrollViewEx extends ViewGroup {
     }
 
     /**
+     * 4.4.3 自定义View示例
      * 不规范的两点：
      * 1.没有子元素的时候不应该把宽高设为0，应该根据LayoutParams中的宽高来做相应的处理。
      * 2.在测量HorizontalScrollView的宽高时，没有考虑他的padding以及子元素的margin。
@@ -177,6 +178,7 @@ public class HorizontalScrollViewEx extends ViewGroup {
     }
 
     /**
+     * 4.4.3 自定义View示例
      * 不规范的点：
      * 1.放置子元素的过程中没有考虑自身的padding以及子元素的margin。
      */
