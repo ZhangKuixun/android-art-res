@@ -27,6 +27,7 @@ public class TestActivity extends Activity implements OnClickListener,
 
     private int mCount = 0;
 
+    //3.3.3 使用延时策略
     @SuppressLint("HandlerLeak")
     private Handler mHandler = new Handler() {
         public void handleMessage(Message msg) {
@@ -88,6 +89,7 @@ public class TestActivity extends Activity implements OnClickListener,
 //            mButton1.requestLayout();
 //            mButton1.setLayoutParams(params);
 
+            //3.3.2 通过动画
 //            final int startX = 0;
 //            final int deltaX = 100;
 //            ValueAnimator animator = ValueAnimator.ofInt(0, 1).setDuration(1000);
