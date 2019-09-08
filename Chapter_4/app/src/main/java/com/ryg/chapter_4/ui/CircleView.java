@@ -10,6 +10,9 @@ import android.view.View;
 
 import com.ryg.chapter_4.R;
 
+/**
+ * 4.4.3 自定义View示例
+ */
 public class CircleView extends View {
 
     private int mColor = Color.RED;
