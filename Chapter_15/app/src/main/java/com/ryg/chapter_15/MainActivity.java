@@ -3,6 +3,7 @@ package com.ryg.chapter_15;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.util.Log;
@@ -37,15 +38,15 @@ public class MainActivity extends Activity implements OnDataArrivedListener {
 //        //animator.cancel();
 
 //        SystemClock.sleep(30 * 1000);
-
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                testANR();
-            }
-        }).start();
-        SystemClock.sleep(10);
-        initView();
+//
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                testANR();
+//            }
+//        }).start();
+//        SystemClock.sleep(10);
+//        initView();
     }
 
     private synchronized void testANR() {
@@ -62,4 +63,8 @@ public class MainActivity extends Activity implements OnDataArrivedListener {
         Log.i(TAG, data.toString());
     }
 
+    public void startOtherActivity(View view) {
+        Intent intent = new Intent(this, OtherActivity.class);
+        startActivity(intent);
+    }
 }

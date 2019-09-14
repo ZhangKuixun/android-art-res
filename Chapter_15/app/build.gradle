@@ -21,4 +21,7 @@ android {
 dependencies {
     implementation 'com.android.support:support-v4:28.0.0'
     implementation files('libs/nineoldandroids.jar')
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
 }

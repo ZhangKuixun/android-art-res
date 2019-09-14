@@ -4,11 +4,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="12dp"
-    tools:context="${relativePackage}.${activityClass}">
+    tools:context=".MainActivity">
 
     <Button
         android:id="@+id/button1"
         style="@style/AppTheme.Button.Green"
+        android:onClick="startOtherActivity"
         android:text="Button" />
 
     <include layout="@layout/merge" />
