@@ -100,7 +100,7 @@ public class ImageLoader {
         mContext = context.getApplicationContext();
 
         /**
-         * LRUCache
+         * LRUCache的使用方法
          */
         int maxMemory = (int) (Runtime.getRuntime().maxMemory() / 1024);//这里返回的是字节数。
         int cacheSize = maxMemory / 8;
@@ -124,7 +124,7 @@ public class ImageLoader {
 
 
         /**
-         * DiskLRUCache
+         * DiskLRUCache的使用方法
          */
         File diskCacheDir = getDiskCacheDir(mContext, "bitmap");
         if (!diskCacheDir.exists()) {
@@ -252,6 +252,9 @@ public class ImageLoader {
         return bitmap;
     }
 
+    /**
+     * 以文件流的形式写到磁盘中。
+     */
     private Bitmap loadBitmapFromHttp(String url, int reqWidth, int reqHeight) throws IOException {
         if (Looper.myLooper() == Looper.getMainLooper()) {
             throw new RuntimeException("can not visit network from UI Thread.");
