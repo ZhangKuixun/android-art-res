@@ -40,13 +40,16 @@ public class CrashHandler implements UncaughtExceptionHandler {
 
     public void init(Context context) {
         mDefaultCrashHandler = Thread.getDefaultUncaughtExceptionHandler();
-        Thread.setDefaultUncaughtExceptionHandler(this);
+        Thread.setDefaultUncaughtExceptionHandler(this);//把系统默认的替换成我们的。
         mContext = context.getApplicationContext();
     }
 
     /**
-     * 这个是最关键的函数，当程序中有未被捕获的异常，系统将会自动调用#uncaughtException方法
-     * thread为出现未捕获异常的线程，ex为未捕获的异常，有了这个ex，我们就可以得到异常信息。
+     * 这个是最关键的函数，当程序中有未被捕获的异常，系统将会自动调用#uncaughtException方法。
+     * 在这里线程已经crash了。
+     *
+     * @param thread 为出现未捕获异常的线程
+     * @param ex     ex为未捕获的异常，有了这个ex，我们就可以得到异常信息
      */
     @Override
     public void uncaughtException(Thread thread, Throwable ex) {
@@ -60,6 +63,9 @@ public class CrashHandler implements UncaughtExceptionHandler {
         }
 
         ex.printStackTrace();
+
+
+        //如果我们要启动Activity，需要把下面这段代码注释掉。
 
         //如果系统提供了默认的异常处理器，则交给系统去结束我们的程序，否则就由我们自己结束自己
         if (mDefaultCrashHandler != null) {
