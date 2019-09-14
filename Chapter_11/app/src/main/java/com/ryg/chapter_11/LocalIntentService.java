@@ -5,6 +5,9 @@ import android.content.Intent;
 import android.os.SystemClock;
 import android.util.Log;
 
+/**
+ * IntentService
+ */
 public class LocalIntentService extends IntentService {
     private static final String TAG = "LocalIntentService";
 

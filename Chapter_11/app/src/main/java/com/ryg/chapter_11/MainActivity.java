@@ -1,14 +1,6 @@
 package com.ryg.chapter_11;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
-
-import com.ryg.chapter_11.R;
-
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -16,6 +8,16 @@ import android.os.Bundle;
 import android.os.SystemClock;
 import android.view.View;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
+/**
+ * Executors
+ */
 public class MainActivity extends Activity {
     private static final String TAG = "MainActivity";
 
@@ -37,6 +39,9 @@ public class MainActivity extends Activity {
         runThreadPool();
     }
 
+    /**
+     * ThreadPool
+     */
     private void runThreadPool() {
         Runnable command = new Runnable() {
             @Override
@@ -47,10 +52,10 @@ public class MainActivity extends Activity {
 
         ExecutorService fixedThreadPool = Executors.newFixedThreadPool(4);
         fixedThreadPool.execute(command);
-        
+
         ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
         cachedThreadPool.execute(command);
-        
+
         ScheduledExecutorService scheduledThreadPool = Executors.newScheduledThreadPool(4);
         // 2000ms后执行command
         scheduledThreadPool.schedule(command, 2000, TimeUnit.MILLISECONDS);
@@ -61,6 +66,9 @@ public class MainActivity extends Activity {
         singleThreadExecutor.execute(command);
     }
 
+    /**
+     * IntentService
+     */
     private void runIntentService() {
         Intent service = new Intent(this, LocalIntentService.class);
         service.putExtra("task_action", "com.ryg.action.TASK1");
@@ -74,12 +82,16 @@ public class MainActivity extends Activity {
     private void runAsyncTask() {
         try {
             new DownloadFilesTask().execute(new URL("http://www.baidu.com"),
-                    new URL("http://www.renyugang.cn"));
+                                            new URL("http://www.renyugang.cn"));
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
     }
 
+    /**
+     * AsyncTask
+     */
+    @SuppressLint("StaticFieldLeak")
     private class DownloadFilesTask extends AsyncTask<URL, Integer, Long> {
         protected Long doInBackground(URL... urls) {
             int count = urls.length;
