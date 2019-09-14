@@ -11,6 +11,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.os.StatFs;
+import android.support.annotation.NonNull;
 import android.support.v4.util.LruCache;
 import android.util.Log;
 import android.widget.ImageView;
@@ -97,14 +98,34 @@ public class ImageLoader {
 
     private ImageLoader(Context context) {
         mContext = context.getApplicationContext();
-        int maxMemory = (int) (Runtime.getRuntime().maxMemory() / 1024);
+
+        /**
+         * LRUCache
+         */
+        int maxMemory = (int) (Runtime.getRuntime().maxMemory() / 1024);//这里返回的是字节数。
         int cacheSize = maxMemory / 8;
+
+        // LruCache使用例子：1.首先new LruCache，然后自定义key，value。
+        // cacheSize是缓存的大小，这里是可用最大内存的1/8。
         mMemoryCache = new LruCache<String, Bitmap>(cacheSize) {
             @Override
-            protected int sizeOf(String key, Bitmap bitmap) {
+            protected int sizeOf(@NonNull String key, @NonNull Bitmap bitmap) {
+
+                // 实现sizeOf，LruCache并不会自己去计算Bitmap大小，在这里算大小，value 有多大。
+                // 行的字节数*它的高度，这里 /1024 ，为了单位和上面的 maxMemory 统一，maxMemory返回的是
+                // 字节数，不然两边都不除，也是可以的。
                 return bitmap.getRowBytes() * bitmap.getHeight() / 1024;
+                // 还有一个问题，为什么要计算当前图片的大小？因为在 LruCache#put 的时候，去计算现在的缓存有多
+                // 大，保存在 size 全局变量中，这里的计算就会调用我们重写的 sizeOf 方法，获取当前图片的大小。
+                // 最后，回去执行 trimToSize 判断刚刚保存的 size 是否小于构造方法中传过去的 cacheSize ，
+                // 如果大于 cacheSize 就会去删除一些元素。
             }
         };
+
+
+        /**
+         * DiskLRUCache
+         */
         File diskCacheDir = getDiskCacheDir(mContext, "bitmap");
         if (!diskCacheDir.exists()) {
             diskCacheDir.mkdirs();
@@ -288,8 +309,7 @@ public class ImageLoader {
         try {
             final URL url = new URL(urlString);
             urlConnection = (HttpURLConnection) url.openConnection();
-            in = new BufferedInputStream(urlConnection.getInputStream(),
-                                         IO_BUFFER_SIZE);
+            in = new BufferedInputStream(urlConnection.getInputStream(), IO_BUFFER_SIZE);
             out = new BufferedOutputStream(outputStream, IO_BUFFER_SIZE);
 
             int b;
