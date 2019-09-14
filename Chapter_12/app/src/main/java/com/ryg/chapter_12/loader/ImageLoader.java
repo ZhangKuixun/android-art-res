@@ -144,6 +144,8 @@ public class ImageLoader {
 
     /**
      * build a new instance of ImageLoader
+     * <p>
+     * 为什么不用单例模式？因为单例需要常驻内存，比如我们的内存缓存设置了5M，他会一直在那占5M的内存。
      *
      * @param context
      * @return a new instance of ImageLoader
@@ -256,7 +258,7 @@ public class ImageLoader {
      * 以文件流的形式写到磁盘中。
      */
     private Bitmap loadBitmapFromHttp(String url, int reqWidth, int reqHeight) throws IOException {
-        if (Looper.myLooper() == Looper.getMainLooper()) {
+        if (Looper.myLooper() == Looper.getMainLooper()) {//异常能让开发人员快速的定位错误。
             throw new RuntimeException("can not visit network from UI Thread.");
         }
         if (mDiskLruCache == null) {
@@ -292,7 +294,8 @@ public class ImageLoader {
         // 通过 FileDescriptor 来加载压缩后的图片。
         DiskLruCache.Snapshot snapShot = mDiskLruCache.get(key);
         if (snapShot != null) {
-            FileInputStream fileInputStream = (FileInputStream) snapShot.getInputStream(DISK_CACHE_INDEX);
+            FileInputStream fileInputStream =
+                    (FileInputStream) snapShot.getInputStream(DISK_CACHE_INDEX);
             FileDescriptor fileDescriptor = fileInputStream.getFD();
             bitmap = mImageResizer.decodeSampledBitmapFromFileDescriptor(fileDescriptor,
                                                                          reqWidth, reqHeight);
@@ -316,6 +319,12 @@ public class ImageLoader {
             out = new BufferedOutputStream(outputStream, IO_BUFFER_SIZE);
 
             int b;
+            // in.read()方法返回的不是字节的长度，是一次读取一个字节，注意这个in，它是 BufferedInputStream,
+            // in内部是有buffer的。比如我们去读一个文件，这个文件有10M，这个 BufferedInputStream 会从文件中
+            // 读1M出来，然后我们这个while循环再去read的时候，每次读一个字节，读的是 BufferedInputStream
+            // 中buffer的1M的内容，当我们把1M读完以后，buffer 又会从10M里面再读1M，然后我们又在循环从1M里面
+            // 一个字节一个字节的读。虽然是一个字节一个字节的读，但是效率也不低，因为我们是有buffer的，每次读取
+            // 的时候，操作的是buffer，而不是源文件。
             while ((b = in.read()) != -1) {
                 out.write(b);
             }
@@ -354,6 +363,9 @@ public class ImageLoader {
         return bitmap;
     }
 
+    /**
+     * 为什么网络地址要用MD5去hash一下？因为网络地址会有很多的乱码，乱码容易引发bug。
+     */
     private String hashKeyFormUrl(String url) {
         String cacheKey;
         try {
