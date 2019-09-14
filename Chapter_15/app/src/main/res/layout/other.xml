@@ -1,11 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+
+<android.support.percent.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
-</LinearLayout>
+        android:id="@+id/btn1"
+        android:layout_gravity="start|top"
+        android:text="btn1"
+        android:textAllCaps="false"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="60%" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_gravity="end|top"
+        android:text="btn2"
+        android:textAllCaps="false"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="40%" />
+
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_gravity="start|bottom"
+        android:text="btn3"
+        android:textAllCaps="false"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="50%" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_gravity="end|bottom"
+        android:text="btn4"
+        android:textAllCaps="false"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="50%" />
+
+</android.support.percent.PercentFrameLayout>
