@@ -83,15 +83,17 @@ public class CrashHandler implements UncaughtExceptionHandler {
                 return;
             }
         }
-
-        File dir = new File(PATH);
+        
+        String path = mContext.getExternalFilesDir("").getPath();
+        
+        File dir = new File(path);
         if (!dir.exists()) {
             dir.mkdirs();
         }
         long current = System.currentTimeMillis();
         @SuppressLint("SimpleDateFormat")
         String time = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date(current));
-        File file = new File(PATH + FILE_NAME + time + FILE_NAME_SUFFIX);
+        File file = new File(path + FILE_NAME + time + FILE_NAME_SUFFIX);
 
         try {
             PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(file)));
