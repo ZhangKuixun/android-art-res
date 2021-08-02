@@ -11,10 +11,11 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.os.StatFs;
-import android.support.annotation.NonNull;
-import android.support.v4.util.LruCache;
 import android.util.Log;
+import android.util.LruCache;
 import android.widget.ImageView;
+
+import androidx.annotation.NonNull;
 
 import com.ryg.chapter_12.R;
 import com.ryg.chapter_12.utils.MyUtils;
