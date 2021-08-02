@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/acbuwa_page"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="46.0dip"
+        layout="@layout/acbuwa_topbar" />
+
+    <ListView
+        android:id="@+id/acbuwa_list"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:background="#b0b0b0"
+        android:cacheColorHint="#000000"
+        android:divider="#00000000"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        android:visibility="visible" />
+
+</LinearLayout>

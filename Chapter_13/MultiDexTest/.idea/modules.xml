@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MultiDexTest.iml" filepath="$PROJECT_DIR$/MultiDexTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MultiDexTest.iml" filepath="$PROJECT_DIR$/.idea/modules/MultiDexTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MultiDexTest.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MultiDexTest.app.iml" />
     </modules>
   </component>
 </project>
