@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION
+
+    defaultConfig {
+        applicationId "com.ryg.multidextest"
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.0"
+
+        // enable multidex support
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+afterEvaluate {
+    println "afterEvaluate"
+    tasks.matching {
+        it.name.startsWith('dex')
+    }.each { dx ->
+        def listFile = project.rootDir.absolutePath + '/app/maindexlist.txt'
+        println "root dir:" + project.rootDir.absolutePath
+        println "dex task found: " + dx.name
+        // 如果不需要指定主dex的方法数下面这个可以不用配置
+        // 另外注意的是additionalParameters这个参数是有限制的,在android studio 3.2.1版本之后
+        // 就无法使用了,dx.jar已经找不到这个参数了,如果你要指定这个参数请使用3.2.1之前的版本(这
+        // 里只对比了android studio 3.1.)
+//        if (dx.additionalParameters == null) {
+//            dx.additionalParameters = []
+//        }
+//        dx.additionalParameters += '--multi-dex'
+//        dx.additionalParameters += '--main-dex-list=' + listFile
+//        dx.additionalParameters += '--minimal-main-dex'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support:appcompat-v7:${ANDROID_SUPPORT_VERSION}"
+    implementation 'com.android.support:multidex:1.0.3'
+}
