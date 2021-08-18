@@ -13,12 +13,17 @@ public class BookProvider extends ContentProvider {
 
     private static final String TAG = "BookProvider";
 
+    /**
+     * 必须与AndroidManifest.xml的provider的authorities值一样。
+     * authorities：
+     * android:authorities="com.ryg.chapter_2.book.provider"
+     */
     public static final String AUTHORITY = "com.ryg.chapter_2.book.provider";
 
     public static final Uri BOOK_CONTENT_URI = Uri.parse("content://"
-                                                                 + AUTHORITY + "/book");
+            + AUTHORITY + "/book");
     public static final Uri USER_CONTENT_URI = Uri.parse("content://"
-                                                                 + AUTHORITY + "/user");
+            + AUTHORITY + "/user");
 
     public static final int BOOK_URI_CODE = 0;
     public static final int USER_URI_CODE = 1;
@@ -52,8 +57,7 @@ public class BookProvider extends ContentProvider {
     }
 
     @Override
-    public Cursor query(Uri uri, String[] projection, String selection,
-                        String[] selectionArgs, String sortOrder) {
+    public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder) {
         Log.d(TAG, "query, current thread:" + Thread.currentThread().getName());
         String table = getTableName(uri);
         if (table == null) {

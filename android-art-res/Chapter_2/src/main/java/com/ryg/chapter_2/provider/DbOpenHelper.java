@@ -35,7 +35,9 @@ public class DbOpenHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // TODO ignored
+        Log.i("greenDAO", "Upgrading schema from version " + oldVersion + " to " + newVersion + " by dropping all tables");
+        db.execSQL("DROP TABLE IF EXISTS " + BOOK_TABLE_NAME);
+        onCreate(db);
     }
 
 }

@@ -18,12 +18,12 @@ public class ProviderActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_provider);
-        // Uri uri = Uri.parse("content://com.ryg.chapter_2.book.provider");// android:authorities 指定的值
-        // getContentResolver().query(uri, null, null, null, null);
-        // getContentResolver().query(uri, null, null, null, null);
-        // getContentResolver().query(uri, null, null, null, null);
+//        Uri uri = BookProvider.BOOK_CONTENT_URI;
+//        getContentResolver().query(uri, null, null, null, null);
+//        getContentResolver().query(uri, null, null, null, null);
+//        getContentResolver().query(uri, null, null, null, null);
 
-        Uri bookUri = Uri.parse("content://com.ryg.chapter_2.book.provider/book");
+        Uri bookUri = BookProvider.BOOK_CONTENT_URI;
         ContentValues values = new ContentValues();
         values.put("_id", 6);
         values.put("name", "程序设计的艺术");
@@ -37,7 +37,7 @@ public class ProviderActivity extends Activity {
         }
         bookCursor.close();
 
-        Uri userUri = Uri.parse("content://com.ryg.chapter_2.book.provider/user");
+        Uri userUri = BookProvider.USER_CONTENT_URI;
         Cursor userCursor = getContentResolver().query(userUri, new String[]{"_id", "name", "sex"}, null, null, null);
         while (userCursor.moveToNext()) {
             User user = new User();
