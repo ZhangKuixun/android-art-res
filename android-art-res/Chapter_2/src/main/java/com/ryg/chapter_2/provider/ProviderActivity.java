@@ -28,6 +28,7 @@ public class ProviderActivity extends Activity {
         values.put("_id", 6);
         values.put("name", "程序设计的艺术");
         getContentResolver().insert(bookUri, values);
+        long l = System.currentTimeMillis();
         Cursor bookCursor = getContentResolver().query(bookUri, new String[]{"_id", "name"}, null, null, null);
         while (bookCursor.moveToNext()) {
             Book book = new Book();
@@ -36,6 +37,7 @@ public class ProviderActivity extends Activity {
             Log.d(TAG, "query book:" + book.toString());
         }
         bookCursor.close();
+        Log.e("kevin", "耗时=" + (System.currentTimeMillis() - l));
 
         Uri userUri = BookProvider.USER_CONTENT_URI;
         Cursor userCursor = getContentResolver().query(userUri, new String[]{"_id", "name", "sex"}, null, null, null);

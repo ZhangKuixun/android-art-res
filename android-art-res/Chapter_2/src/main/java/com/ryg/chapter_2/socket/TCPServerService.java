@@ -3,6 +3,7 @@ package com.ryg.chapter_2.socket;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
+import android.util.Log;
 
 import com.ryg.chapter_2.utils.MyUtils;
 
@@ -35,6 +36,7 @@ public class TCPServerService extends Service {
 
     @Override
     public IBinder onBind(Intent intent) {
+        Log.i("kevin", "onBind");
         return null;
     }
 
